@@ -1,0 +1,2826 @@
+<root>
+
+ <class type="Job" version="1.6" category="jobs">
+
+    <attribute type="comment"> 
+
+        <value>''</value>
+
+    </attribute>
+
+    <attribute type="id"> 
+
+        <value>0</value>
+
+    </attribute>
+
+    <attribute type="status"> 
+
+        <value>'completed'</value>
+
+    </attribute>
+
+    <attribute type="do_auto_resubmit"> 
+
+        <value>False</value>
+
+    </attribute>
+
+    <attribute type="type"> 
+
+        <value>'B2Kmumu_Data_2018_2018_S34_MD'</value>
+
+    </attribute>
+
+    <attribute type="outputsandbox"> 
+
+       <sequence>
+
+       </sequence>
+
+    </attribute>
+
+    <attribute type="non_copyable_outputfiles">
+
+       <sequence>
+
+       </sequence>
+
+    </attribute>
+
+    <attribute type="inputfiles">
+
+       <sequence>
+
+       </sequence>
+
+    </attribute>
+
+    <attribute type="backend">
+
+          <class type="Dirac" version="3.2" category="backends">
+
+             <attribute type="status"> 
+
+                 <value>'Done'</value>
+
+             </attribute>
+
+             <attribute type="diracOpts"> 
+
+                 <value>''</value>
+
+             </attribute>
+
+             <attribute type="settings"> 
+
+                 <value>{'CPUTime': 1209600}</value>
+
+             </attribute>
+
+             <attribute type="normCPUTime"> 
+
+                 <value>'106334.04'</value>
+
+             </attribute>
+
+             <attribute type="downloadSandbox"> 
+
+                 <value>True</value>
+
+             </attribute>
+
+             <attribute type="extraInfo"> 
+
+                 <value>'Job Finished Successfully'</value>
+
+             </attribute>
+
+             <attribute type="actualCE"> 
+
+                 <value>'LCG.CNAF.it'</value>
+
+             </attribute>
+
+             <attribute type="unpackOutputSandbox"> 
+
+                 <value>True</value>
+
+             </attribute>
+
+             <attribute type="blockSubmit"> 
+
+                 <value>True</value>
+
+             </attribute>
+
+             <attribute type="statusInfo"> 
+
+                 <value>'Execution Complete'</value>
+
+             </attribute>
+
+             <attribute type="finaliseOnMaster"> 
+
+                 <value>False</value>
+
+             </attribute>
+
+             <attribute type="id"> 
+
+                 <value>259531729</value>
+
+             </attribute>
+
+             <attribute type="credential_requirements">
+
+                   <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                      <attribute type="dirac_env"> 
+
+                          <value>None</value>
+
+                      </attribute>
+
+                      <attribute type="validTime"> 
+
+                          <value>None</value>
+
+                      </attribute>
+
+                      <attribute type="group"> 
+
+                          <value>'lhcb_user'</value>
+
+                      </attribute>
+
+                      <attribute type="encodeDefaultProxyFileName"> 
+
+                          <value>False</value>
+
+                      </attribute>
+
+                   </class>
+
+             </attribute>
+
+          </class>
+
+    </attribute>
+
+    <attribute type="subjobs">
+
+       <sequence>
+
+       </sequence>
+
+    </attribute>
+
+    <attribute type="merger">
+
+       <value>None</value>
+
+    </attribute>
+
+    <attribute type="application">
+
+          <class type="GaudiExec" version="1.0" category="applications">
+
+             <attribute type="hash"> 
+
+                 <value>'85c74d55153c2b535aa07b2067c9381e'</value>
+
+             </attribute>
+
+             <attribute type="getMetadata"> 
+
+                 <value>False</value>
+
+             </attribute>
+
+             <attribute type="extraArgs"> 
+
+                <sequence>
+
+                </sequence>
+
+             </attribute>
+
+             <attribute type="envVars"> 
+
+                 <value>{'XMLSUMMARYBASEROOT': '/cvmfs/lhcb.cern.ch/lib/lhcb/LHCB/LHCB_v44r2p1/Kernel/XMLSummaryBase'}</value>
+
+             </attribute>
+
+             <attribute type="is_prepared"> 
+
+                      <class type="ShareDir" version="1.0" category="shareddirs">
+
+                         <attribute type="type"> 
+
+                             <value>'conf-51ca2c77-a800-4058-9054-c9ed12dfae91'</value>
+
+                         </attribute>
+
+                         <attribute type="subdir"> 
+
+                             <value>'.'</value>
+
+                         </attribute>
+
+                         <attribute type="associated_files">
+
+                               <class type="GangaList" version="1.0" category="internal">
+
+                                  <attribute type="_is_preparable"> 
+
+                                      <value>False</value>
+
+                                  </attribute>
+
+                                  <attribute type="_list">
+
+                                     <sequence>
+
+                                     </sequence>
+
+                                  </attribute>
+
+                               </class>
+
+                         </attribute>
+
+                      </class>
+
+             </attribute>
+
+             <attribute type="extraOpts"> 
+
+                 <value>''</value>
+
+             </attribute>
+
+             <attribute type="useGaudiRun"> 
+
+                 <value>True</value>
+
+             </attribute>
+
+             <attribute type="autoDBtags"> 
+
+                 <value>False</value>
+
+             </attribute>
+
+             <attribute type="platform"> 
+
+                 <value>'x86_64-slc6-gcc62-opt'</value>
+
+             </attribute>
+
+             <attribute type="directory"> 
+
+                 <value>'/afs/cern.ch/user/m/masmith/forSL/DaVinciDev_v44r4'</value>
+
+             </attribute>
+
+             <attribute type="jobScriptArchive">
+
+                   <class type="DiracFile" version="1.1" category="gangafiles">
+
+                      <attribute type="remoteDir"> 
+
+                          <value>'/lhcb/user/m/masmith/GangaFiles_16.18_Friday_15_February_2019'</value>
+
+                      </attribute>
+
+                      <attribute type="lfn"> 
+
+                          <value>'/lhcb/user/m/masmith/GangaFiles_16.18_Friday_15_February_2019/jobScripts-3191_aeccc15f-b5af-46d5-bd69-67c91d5467ae.tar.gz'</value>
+
+                      </attribute>
+
+                      <attribute type="locations"> 
+
+                         <sequence>
+
+                            <value>'RAL-USER'</value>
+
+                            <value>'SARA-USER'</value>
+
+                         </sequence>
+
+                      </attribute>
+
+                      <attribute type="typePattern"> 
+
+                          <value>'jobScripts-3191_aeccc15f-b5af-46d5-bd69-67c91d5467ae.tar.gz'</value>
+
+                      </attribute>
+
+                      <attribute type="compressed"> 
+
+                          <value>False</value>
+
+                      </attribute>
+
+                      <attribute type="defaultSE"> 
+
+                          <value>''</value>
+
+                      </attribute>
+
+                      <attribute type="guid"> 
+
+                          <value>'67274544-4CCC-BC37-5B04-4E4113A6B4C4'</value>
+
+                      </attribute>
+
+                      <attribute type="failureReason"> 
+
+                          <value>''</value>
+
+                      </attribute>
+
+                      <attribute type="localDir"> 
+
+                          <value>'/afs/cern.ch/work/m/masmith/gangadir/workspace/masmith/LocalXML/3191/input'</value>
+
+                      </attribute>
+
+                      <attribute type="subfiles">
+
+                         <sequence>
+
+                         </sequence>
+
+                      </attribute>
+
+                      <attribute type="credential_requirements">
+
+                            <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                               <attribute type="dirac_env"> 
+
+                                   <value>None</value>
+
+                               </attribute>
+
+                               <attribute type="validTime"> 
+
+                                   <value>None</value>
+
+                               </attribute>
+
+                               <attribute type="group"> 
+
+                                   <value>'lhcb_user'</value>
+
+                               </attribute>
+
+                               <attribute type="encodeDefaultProxyFileName"> 
+
+                                   <value>False</value>
+
+                               </attribute>
+
+                            </class>
+
+                      </attribute>
+
+                   </class>
+
+             </attribute>
+
+             <attribute type="uploadedInput">
+
+                   <class type="DiracFile" version="1.1" category="gangafiles">
+
+                      <attribute type="remoteDir"> 
+
+                          <value>'/lhcb/user/m/masmith/GangaFiles_16.15_Friday_15_February_2019'</value>
+
+                      </attribute>
+
+                      <attribute type="lfn"> 
+
+                          <value>'/lhcb/user/m/masmith/GangaFiles_16.15_Friday_15_February_2019/diracInputFiles_3191_44a79c17-8535-4f85-bd41-07e1771d4b1e.tgz'</value>
+
+                      </attribute>
+
+                      <attribute type="locations"> 
+
+                         <sequence>
+
+                            <value>'RRCKI-USER'</value>
+
+                            <value>'PIC-USER'</value>
+
+                         </sequence>
+
+                      </attribute>
+
+                      <attribute type="typePattern"> 
+
+                          <value>'diracInputFiles_3191_44a79c17-8535-4f85-bd41-07e1771d4b1e.tgz'</value>
+
+                      </attribute>
+
+                      <attribute type="compressed"> 
+
+                          <value>False</value>
+
+                      </attribute>
+
+                      <attribute type="defaultSE"> 
+
+                          <value>''</value>
+
+                      </attribute>
+
+                      <attribute type="guid"> 
+
+                          <value>'9E507FEC-A094-4E37-3622-59F40EE9737B'</value>
+
+                      </attribute>
+
+                      <attribute type="failureReason"> 
+
+                          <value>''</value>
+
+                      </attribute>
+
+                      <attribute type="localDir"> 
+
+                          <value>'/tmp/masmith'</value>
+
+                      </attribute>
+
+                      <attribute type="subfiles">
+
+                         <sequence>
+
+                         </sequence>
+
+                      </attribute>
+
+                      <attribute type="credential_requirements">
+
+                            <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                               <attribute type="dirac_env"> 
+
+                                   <value>None</value>
+
+                               </attribute>
+
+                               <attribute type="validTime"> 
+
+                                   <value>None</value>
+
+                               </attribute>
+
+                               <attribute type="group"> 
+
+                                   <value>'lhcb_user'</value>
+
+                               </attribute>
+
+                               <attribute type="encodeDefaultProxyFileName"> 
+
+                                   <value>False</value>
+
+                               </attribute>
+
+                            </class>
+
+                      </attribute>
+
+                   </class>
+
+             </attribute>
+
+             <attribute type="options">
+
+                <sequence>
+
+                      <class type="LocalFile" version="1.1" category="gangafiles">
+
+                         <attribute type="typePattern"> 
+
+                             <value>'b2xmumu_2018.py'</value>
+
+                         </attribute>
+
+                         <attribute type="compressed"> 
+
+                             <value>False</value>
+
+                         </attribute>
+
+                         <attribute type="localDir"> 
+
+                             <value>'/afs/cern.ch/user/m/masmith/private/Imperial/KstMuMu/binned-angular-kstarmumu/Tuple_Production/Data/2018'</value>
+
+                         </attribute>
+
+                         <attribute type="subfiles">
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                      </class>
+
+                </sequence>
+
+             </attribute>
+
+          </class>
+
+    </attribute>
+
+    <attribute type="inputdata">
+
+          <class type="LHCbDataset" version="3.0" category="datasets">
+
+             <attribute type="depth"> 
+
+                 <value>0</value>
+
+             </attribute>
+
+             <attribute type="treat_as_inputfiles"> 
+
+                 <value>False</value>
+
+             </attribute>
+
+             <attribute type="persistency"> 
+
+                 <value>None</value>
+
+             </attribute>
+
+             <attribute type="files">
+
+                <sequence>
+
+                      <class type="DiracFile" version="1.1" category="gangafiles">
+
+                         <attribute type="remoteDir"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="lfn"> 
+
+                             <value>'/lhcb/LHCb/Collision18/LEPTONIC.MDST/00077434/0003/00077434_00035029_1.leptonic.mdst'</value>
+
+                         </attribute>
+
+                         <attribute type="locations"> 
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="typePattern"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="compressed"> 
+
+                             <value>False</value>
+
+                         </attribute>
+
+                         <attribute type="defaultSE"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="guid"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="failureReason"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="localDir"> 
+
+                             <value>None</value>
+
+                         </attribute>
+
+                         <attribute type="subfiles">
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="credential_requirements">
+
+                               <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                                  <attribute type="dirac_env"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="validTime"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="group"> 
+
+                                      <value>'lhcb_user'</value>
+
+                                  </attribute>
+
+                                  <attribute type="encodeDefaultProxyFileName"> 
+
+                                      <value>False</value>
+
+                                  </attribute>
+
+                               </class>
+
+                         </attribute>
+
+                      </class>
+
+                      <class type="DiracFile" version="1.1" category="gangafiles">
+
+                         <attribute type="remoteDir"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="lfn"> 
+
+                             <value>'/lhcb/LHCb/Collision18/LEPTONIC.MDST/00075559/0001/00075559_00011792_1.leptonic.mdst'</value>
+
+                         </attribute>
+
+                         <attribute type="locations"> 
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="typePattern"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="compressed"> 
+
+                             <value>False</value>
+
+                         </attribute>
+
+                         <attribute type="defaultSE"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="guid"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="failureReason"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="localDir"> 
+
+                             <value>None</value>
+
+                         </attribute>
+
+                         <attribute type="subfiles">
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="credential_requirements">
+
+                               <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                                  <attribute type="dirac_env"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="validTime"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="group"> 
+
+                                      <value>'lhcb_user'</value>
+
+                                  </attribute>
+
+                                  <a	ttribute type="encodeDefaultProxyFileName"> 
+
+                                      <value>False</value>
+
+                                  </attribute>
+
+                               </class>
+
+                         </attribute>
+
+                      </class>
+
+                      <class type="DiracFile" version="1.1" category="gangafiles">
+
+                         <attribute type="remoteDir"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="lfn"> 
+
+                             <value>'/lhcb/LHCb/Collision18/LEPTONIC.MDST/00077434/0003/00077434_00035972_1.leptonic.mdst'</value>
+
+                         </attribute>
+
+                         <attribute type="locations"> 
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="typePattern"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="compressed"> 
+
+                             <value>False</value>
+
+                         </attribute>
+
+                         <attribute type="defaultSE"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="guid"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="failureReason"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="localDir"> 
+
+                             <value>None</value>
+
+                         </attribute>
+
+                         <attribute type="subfiles">
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="credential_requirements">
+
+                               <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                                  <attribute type="dirac_env"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="validTime"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="group"> 
+
+                                      <value>'lhcb_user'</value>
+
+                                  </attribute>
+
+                                  <attribute type="encodeDefaultProxyFileName"> 
+
+                                      <value>False</value>
+
+                                  </attribute>
+
+                               </class>
+
+                         </attribute>
+
+                      </class>
+
+                      <class type="DiracFile" version="1.1" category="gangafiles">
+
+                         <attribute type="remoteDir"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="lfn"> 
+
+                             <value>'/lhcb/LHCb/Collision18/LEPTONIC.MDST/00075559/0002/00075559_00023218_1.leptonic.mdst'</value>
+
+                         </attribute>
+
+                         <attribute type="locations"> 
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="typePattern"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="compressed"> 
+
+                             <value>False</value>
+
+                         </attribute>
+
+                         <attribute type="defaultSE"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="guid"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="failureReason"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="localDir"> 
+
+                             <value>None</value>
+
+                         </attribute>
+
+                         <attribute type="subfiles">
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="credential_requirements">
+
+                               <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                                  <attribute type="dirac_env"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="validTime"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="group"> 
+
+                                      <value>'lhcb_user'</value>
+
+                                  </attribute>
+
+                                  <attribute type="encodeDefaultProxyFileName"> 
+
+                                      <value>False</value>
+
+                                  </attribute>
+
+                               </class>
+
+                         </attribute>
+
+                      </class>
+
+                      <class type="DiracFile" version="1.1" category="gangafiles">
+
+                         <attribute type="remoteDir"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="lfn"> 
+
+                             <value>'/lhcb/LHCb/Collision18/LEPTONIC.MDST/00075559/0002/00075559_00027603_1.leptonic.mdst'</value>
+
+                         </attribute>
+
+                         <attribute type="locations"> 
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="typePattern"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="compressed"> 
+
+                             <value>False</value>
+
+                         </attribute>
+
+                         <attribute type="defaultSE"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="guid"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="failureReason"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="localDir"> 
+
+                             <value>None</value>
+
+                         </attribute>
+
+                         <attribute type="subfiles">
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="credential_requirements">
+
+                               <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                                  <attribute type="dirac_env"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="validTime"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="group"> 
+
+                                      <value>'lhcb_user'</value>
+
+                                  </attribute>
+
+                                  <attribute type="encodeDefaultProxyFileName"> 
+
+                                      <value>False</value>
+
+                                  </attribute>
+
+                               </class>
+
+                         </attribute>
+
+                      </class>
+
+                      <class type="DiracFile" version="1.1" category="gangafiles">
+
+                         <attribute type="remoteDir"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="lfn"> 
+
+                             <value>'/lhcb/LHCb/Collision18/LEPTONIC.MDST/00075559/0003/00075559_00037312_1.leptonic.mdst'</value>
+
+                         </attribute>
+
+                         <attribute type="locations"> 
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="typePattern"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="compressed"> 
+
+                             <value>False</value>
+
+                         </attribute>
+
+                         <attribute type="defaultSE"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="guid"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="failureReason"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="localDir"> 
+
+                             <value>None</value>
+
+                         </attribute>
+
+                         <attribute type="subfiles">
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="credential_requirements">
+
+                               <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                                  <attribute type="dirac_env"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="validTime"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="group"> 
+
+                                      <value>'lhcb_user'</value>
+
+                                  </attribute>
+
+                                  <attribute type="encodeDefaultProxyFileName"> 
+
+                                      <value>False</value>
+
+                                  </attribute>
+
+                               </class>
+
+                         </attribute>
+
+                      </class>
+
+                      <class type="DiracFile" version="1.1" category="gangafiles">
+
+                         <attribute type="remoteDir"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="lfn"> 
+
+                             <value>'/lhcb/LHCb/Collision18/LEPTONIC.MDST/00075559/0001/00075559_00017376_1.leptonic.mdst'</value>
+
+                         </attribute>
+
+                         <attribute type="locations"> 
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="typePattern"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="compressed"> 
+
+                             <value>False</value>
+
+                         </attribute>
+
+                         <attribute type="defaultSE"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="guid"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="failureReason"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="localDir"> 
+
+                             <value>None</value>
+
+                         </attribute>
+
+                         <attribute type="subfiles">
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="credential_requirements">
+
+                               <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                                  <attribute type="dirac_env"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="validTime"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="group"> 
+
+                                      <value>'lhcb_user'</value>
+
+                                  </attribute>
+
+                                  <attribute type="encodeDefaultProxyFileName"> 
+
+                                      <value>False</value>
+
+                                  </attribute>
+
+                               </class>
+
+                         </attribute>
+
+                      </class>
+
+                      <class type="DiracFile" version="1.1" category="gangafiles">
+
+                         <attribute type="remoteDir"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="lfn"> 
+
+                             <value>'/lhcb/LHCb/Collision18/LEPTONIC.MDST/00077434/0005/00077434_00054174_1.leptonic.mdst'</value>
+
+                         </attribute>
+
+                         <attribute type="locations"> 
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="typePattern"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="compressed"> 
+
+                             <value>False</value>
+
+                         </attribute>
+
+                         <attribute type="defaultSE"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="guid"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="failureReason"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="localDir"> 
+
+                             <value>None</value>
+
+                         </attribute>
+
+                         <attribute type="subfiles">
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="credential_requirements">
+
+                               <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                                  <attribute type="dirac_env"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="validTime"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="group"> 
+
+                                      <value>'lhcb_user'</value>
+
+                                  </attribute>
+
+                                  <attribute type="encodeDefaultProxyFileName"> 
+
+                                      <value>False</value>
+
+                                  </attribute>
+
+                               </class>
+
+                         </attribute>
+
+                      </class>
+
+                      <class type="DiracFile" version="1.1" category="gangafiles">
+
+                         <attribute type="remoteDir"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="lfn"> 
+
+                             <value>'/lhcb/LHCb/Collision18/LEPTONIC.MDST/00075559/0001/00075559_00011653_1.leptonic.mdst'</value>
+
+                         </attribute>
+
+                         <attribute type="locations"> 
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="typePattern"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="compressed"> 
+
+                             <value>False</value>
+
+                         </attribute>
+
+                         <attribute type="defaultSE"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="guid"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="failureReason"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="localDir"> 
+
+                             <value>None</value>
+
+                         </attribute>
+
+                         <attribute type="subfiles">
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="credential_requirements">
+
+                               <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                                  <attribute type="dirac_env"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="validTime"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="group"> 
+
+                                      <value>'lhcb_user'</value>
+
+                                  </attribute>
+
+                                  <attribute type="encodeDefaultProxyFileName"> 
+
+                                      <value>False</value>
+
+                                  </attribute>
+
+                               </class>
+
+                         </attribute>
+
+                      </class>
+
+                      <class type="DiracFile" version="1.1" category="gangafiles">
+
+                         <attribute type="remoteDir"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="lfn"> 
+
+                             <value>'/lhcb/LHCb/Collision18/LEPTONIC.MDST/00075559/0003/00075559_00036412_1.leptonic.mdst'</value>
+
+                         </attribute>
+
+                         <attribute type="locations"> 
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="typePattern"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="compressed"> 
+
+                             <value>False</value>
+
+                         </attribute>
+
+                         <attribute type="defaultSE"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="guid"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="failureReason"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="localDir"> 
+
+                             <value>None</value>
+
+                         </attribute>
+
+                         <attribute type="subfiles">
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="credential_requirements">
+
+                               <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                                  <attribute type="dirac_env"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="validTime"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="group"> 
+
+                                      <value>'lhcb_user'</value>
+
+                                  </attribute>
+
+                                  <attribute type="encodeDefaultProxyFileName"> 
+
+                                      <value>False</value>
+
+                                  </attribute>
+
+                               </class>
+
+                         </attribute>
+
+                      </class>
+
+                      <class type="DiracFile" version="1.1" category="gangafiles">
+
+                         <attribute type="remoteDir"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="lfn"> 
+
+                             <value>'/lhcb/LHCb/Collision18/LEPTONIC.MDST/00079436/0000/00079436_00001161_1.leptonic.mdst'</value>
+
+                         </attribute>
+
+                         <attribute type="locations"> 
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="typePattern"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="compressed"> 
+
+                             <value>False</value>
+
+                         </attribute>
+
+                         <attribute type="defaultSE"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="guid"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="failureReason"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="localDir"> 
+
+                             <value>None</value>
+
+                         </attribute>
+
+                         <attribute type="subfiles">
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="credential_requirements">
+
+                               <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                                  <attribute type="dirac_env"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="validTime"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="group"> 
+
+                                      <value>'lhcb_user'</value>
+
+                                  </attribute>
+
+                                  <attribute type="encodeDefaultProxyFileName"> 
+
+                                      <value>False</value>
+
+                                  </attribute>
+
+                               </class>
+
+                         </attribute>
+
+                      </class>
+
+                      <class type="DiracFile" version="1.1" category="gangafiles">
+
+                         <attribute type="remoteDir"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="lfn"> 
+
+                             <value>'/lhcb/LHCb/Collision18/LEPTONIC.MDST/00077434/0005/00077434_00055560_1.leptonic.mdst'</value>
+
+                         </attribute>
+
+                         <attribute type="locations"> 
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="typePattern"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="compressed"> 
+
+                             <value>False</value>
+
+                         </attribute>
+
+                         <attribute type="defaultSE"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="guid"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="failureReason"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="localDir"> 
+
+                             <value>None</value>
+
+                         </attribute>
+
+                         <attribute type="subfiles">
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="credential_requirements">
+
+                               <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                                  <attribute type="dirac_env"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="validTime"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="group"> 
+
+                                      <value>'lhcb_user'</value>
+
+                                  </attribute>
+
+                                  <attribute type="encodeDefaultProxyFileName"> 
+
+                                      <value>False</value>
+
+                                  </attribute>
+
+                               </class>
+
+                         </attribute>
+
+                      </class>
+
+                      <class type="DiracFile" version="1.1" category="gangafiles">
+
+                         <attribute type="remoteDir"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="lfn"> 
+
+                             <value>'/lhcb/LHCb/Collision18/LEPTONIC.MDST/00077434/0003/00077434_00031060_1.leptonic.mdst'</value>
+
+                         </attribute>
+
+                         <attribute type="locations"> 
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="typePattern"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="compressed"> 
+
+                             <value>False</value>
+
+                         </attribute>
+
+                         <attribute type="defaultSE"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="guid"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="failureReason"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="localDir"> 
+
+                             <value>None</value>
+
+                         </attribute>
+
+                         <attribute type="subfiles">
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="credential_requirements">
+
+                               <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                                  <attribute type="dirac_env"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="validTime"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="group"> 
+
+                                      <value>'lhcb_user'</value>
+
+                                  </attribute>
+
+                                  <attribute type="encodeDefaultProxyFileName"> 
+
+                                      <value>False</value>
+
+                                  </attribute>
+
+                               </class>
+
+                         </attribute>
+
+                      </class>
+
+                      <class type="DiracFile" version="1.1" category="gangafiles">
+
+                         <attribute type="remoteDir"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="lfn"> 
+
+                             <value>'/lhcb/LHCb/Collision18/LEPTONIC.MDST/00075559/0000/00075559_00000492_1.leptonic.mdst'</value>
+
+                         </attribute>
+
+                         <attribute type="locations"> 
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="typePattern"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="compressed"> 
+
+                             <value>False</value>
+
+                         </attribute>
+
+                         <attribute type="defaultSE"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="guid"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="failureReason"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="localDir"> 
+
+                             <value>None</value>
+
+                         </attribute>
+
+                         <attribute type="subfiles">
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="credential_requirements">
+
+                               <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                                  <attribute type="dirac_env"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="validTime"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="group"> 
+
+                                      <value>'lhcb_user'</value>
+
+                                  </attribute>
+
+                                  <attribute type="encodeDefaultProxyFileName"> 
+
+                                      <value>False</value>
+
+                                  </attribute>
+
+                               </class>
+
+                         </attribute>
+
+                      </class>
+
+                      <class type="DiracFile" version="1.1" category="gangafiles">
+
+                         <attribute type="remoteDir"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="lfn"> 
+
+                             <value>'/lhcb/LHCb/Collision18/LEPTONIC.MDST/00075559/0000/00075559_00000958_1.leptonic.mdst'</value>
+
+                         </attribute>
+
+                         <attribute type="locations"> 
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="typePattern"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="compressed"> 
+
+                             <value>False</value>
+
+                         </attribute>
+
+                         <attribute type="defaultSE"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="guid"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="failureReason"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="localDir"> 
+
+                             <value>None</value>
+
+                         </attribute>
+
+                         <attribute type="subfiles">
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="credential_requirements">
+
+                               <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                                  <attribute type="dirac_env"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="validTime"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="group"> 
+
+                                      <value>'lhcb_user'</value>
+
+                                  </attribute>
+
+                                  <attribute type="encodeDefaultProxyFileName"> 
+
+                                      <value>False</value>
+
+                                  </attribute>
+
+                               </class>
+
+                         </attribute>
+
+                      </class>
+
+                      <class type="DiracFile" version="1.1" category="gangafiles">
+
+                         <attribute type="remoteDir"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="lfn"> 
+
+                             <value>'/lhcb/LHCb/Collision18/LEPTONIC.MDST/00075559/0003/00075559_00036157_1.leptonic.mdst'</value>
+
+                         </attribute>
+
+                         <attribute type="locations"> 
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="typePattern"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="compressed"> 
+
+                             <value>False</value>
+
+                         </attribute>
+
+                         <attribute type="defaultSE"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="guid"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="failureReason"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="localDir"> 
+
+                             <value>None</value>
+
+                         </attribute>
+
+                         <attribute type="subfiles">
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="credential_requirements">
+
+                               <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                                  <attribute type="dirac_env"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="validTime"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="group"> 
+
+                                      <value>'lhcb_user'</value>
+
+                                  </attribute>
+
+                                  <attribute type="encodeDefaultProxyFileName"> 
+
+                                      <value>False</value>
+
+                                  </attribute>
+
+                               </class>
+
+                         </attribute>
+
+                      </class>
+
+                      <class type="DiracFile" version="1.1" category="gangafiles">
+
+                         <attribute type="remoteDir"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="lfn"> 
+
+                             <value>'/lhcb/LHCb/Collision18/LEPTONIC.MDST/00079436/0000/00079436_00000243_1.leptonic.mdst'</value>
+
+                         </attribute>
+
+                         <attribute type="locations"> 
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="typePattern"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="compressed"> 
+
+                             <value>False</value>
+
+                         </attribute>
+
+                         <attribute type="defaultSE"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="guid"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="failureReason"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="localDir"> 
+
+                             <value>None</value>
+
+                         </attribute>
+
+                         <attribute type="subfiles">
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="credential_requirements">
+
+                               <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                                  <attribute type="dirac_env"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="validTime"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="group"> 
+
+                                      <value>'lhcb_user'</value>
+
+                                  </attribute>
+
+                                  <attribute type="encodeDefaultProxyFileName"> 
+
+                                      <value>False</value>
+
+                                  </attribute>
+
+                               </class>
+
+                         </attribute>
+
+                      </class>
+
+                      <class type="DiracFile" version="1.1" category="gangafiles">
+
+                         <attribute type="remoteDir"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="lfn"> 
+
+                             <value>'/lhcb/LHCb/Collision18/LEPTONIC.MDST/00077434/0003/00077434_00037032_1.leptonic.mdst'</value>
+
+                         </attribute>
+
+                         <attribute type="locations"> 
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="typePattern"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="compressed"> 
+
+                             <value>False</value>
+
+                         </attribute>
+
+                         <attribute type="defaultSE"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="guid"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="failureReason"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="localDir"> 
+
+                             <value>None</value>
+
+                         </attribute>
+
+                         <attribute type="subfiles">
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="credential_requirements">
+
+                               <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                                  <attribute type="dirac_env"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="validTime"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="group"> 
+
+                                      <value>'lhcb_user'</value>
+
+                                  </attribute>
+
+                                  <attribute type="encodeDefaultProxyFileName"> 
+
+                                      <value>False</value>
+
+                                  </attribute>
+
+                               </class>
+
+                         </attribute>
+
+                      </class>
+
+                      <class type="DiracFile" version="1.1" category="gangafiles">
+
+                         <attribute type="remoteDir"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="lfn"> 
+
+                             <value>'/lhcb/LHCb/Collision18/LEPTONIC.MDST/00075559/0003/00075559_00036563_1.leptonic.mdst'</value>
+
+                         </attribute>
+
+                         <attribute type="locations"> 
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="typePattern"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="compressed"> 
+
+                             <value>False</value>
+
+                         </attribute>
+
+                         <attribute type="defaultSE"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="guid"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="failureReason"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="localDir"> 
+
+                             <value>None</value>
+
+                         </attribute>
+
+                         <attribute type="subfiles">
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="credential_requirements">
+
+                               <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                                  <attribute type="dirac_env"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="validTime"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="group"> 
+
+                                      <value>'lhcb_user'</value>
+
+                                  </attribute>
+
+                                  <attribute type="encodeDefaultProxyFileName"> 
+
+                                      <value>False</value>
+
+                                  </attribute>
+
+                               </class>
+
+                         </attribute>
+
+                      </class>
+
+                      <class type="DiracFile" version="1.1" category="gangafiles">
+
+                         <attribute type="remoteDir"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="lfn"> 
+
+                             <value>'/lhcb/LHCb/Collision18/LEPTONIC.MDST/00075559/0000/00075559_00009311_1.leptonic.mdst'</value>
+
+                         </attribute>
+
+                         <attribute type="locations"> 
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="typePattern"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="compressed"> 
+
+                             <value>False</value>
+
+                         </attribute>
+
+                         <attribute type="defaultSE"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="guid"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="failureReason"> 
+
+                             <value>''</value>
+
+                         </attribute>
+
+                         <attribute type="localDir"> 
+
+                             <value>None</value>
+
+                         </attribute>
+
+                         <attribute type="subfiles">
+
+                            <sequence>
+
+                            </sequence>
+
+                         </attribute>
+
+                         <attribute type="credential_requirements">
+
+                               <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                                  <attribute type="dirac_env"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="validTime"> 
+
+                                      <value>None</value>
+
+                                  </attribute>
+
+                                  <attribute type="group"> 
+
+                                      <value>'lhcb_user'</value>
+
+                                  </attribute>
+
+                                  <attribute type="encodeDefaultProxyFileName"> 
+
+                                      <value>False</value>
+
+                                  </attribute>
+
+                               </class>
+
+                         </attribute>
+
+                      </class>
+
+                </sequence>
+
+             </attribute>
+
+             <attribute type="XMLCatalogueSlice">
+
+                   <class type="LocalFile" version="1.1" category="gangafiles">
+
+                      <attribute type="typePattern"> 
+
+                          <value>''</value>
+
+                      </attribute>
+
+                      <attribute type="compressed"> 
+
+                          <value>False</value>
+
+                      </attribute>
+
+                      <attribute type="localDir"> 
+
+                          <value>''</value>
+
+                      </attribute>
+
+                      <attribute type="subfiles">
+
+                         <sequence>
+
+                         </sequence>
+
+                      </attribute>
+
+                   </class>
+
+             </attribute>
+
+          </class>
+
+    </attribute>
+
+    <attribute type="metadata">
+
+          <class type="MetadataDict" version="1.0" category="metadata">
+
+             <attribute type="data"> 
+
+                 <value>{}</value>
+
+             </attribute>
+
+          </class>
+
+    </attribute>
+
+    <attribute type="outputfiles">
+
+       <sequence>
+
+             <class type="DiracFile" version="1.1" category="gangafiles">
+
+                <attribute type="remoteDir"> 
+
+                    <value>''</value>
+
+                </attribute>
+
+                <attribute type="lfn"> 
+
+                    <value>'/lhcb/user/m/masmith/2019_02/259531/259531729/DVntuple.root'</value>
+
+                </attribute>
+
+                <attribute type="locations"> 
+
+                   <sequence>
+
+                      <value>'CNAF-USER'</value>
+
+                   </sequence>
+
+                </attribute>
+
+                <attribute type="typePattern"> 
+
+                    <value>'DVntuple.root'</value>
+
+                </attribute>
+
+                <attribute type="compressed"> 
+
+                    <value>False</value>
+
+                </attribute>
+
+                <attribute type="defaultSE"> 
+
+                    <value>''</value>
+
+                </attribute>
+
+                <attribute type="guid"> 
+
+                    <value>'2E33A035-A09A-27EC-A92A-7ABCDAE642A4'</value>
+
+                </attribute>
+
+                <attribute type="failureReason"> 
+
+                    <value>''</value>
+
+                </attribute>
+
+                <attribute type="localDir"> 
+
+                    <value>'/afs/cern.ch/work/m/masmith/gangadir/workspace/masmith/LocalXML/3191/0/output'</value>
+
+                </attribute>
+
+                <attribute type="subfiles">
+
+                   <sequence>
+
+                   </sequence>
+
+                </attribute>
+
+                <attribute type="credential_requirements">
+
+                      <class type="DiracProxy" version="1.0" category="CredentialRequirement">
+
+                         <attribute type="dirac_env"> 
+
+                             <value>None</value>
+
+                         </attribute>
+
+                         <attribute type="validTime"> 
+
+                             <value>None</value>
+
+                         </attribute>
+
+                         <attribute type="group"> 
+
+                             <value>'lhcb_user'</value>
+
+                         </attribute>
+
+                         <attribute type="encodeDefaultProxyFileName"> 
+
+                             <value>False</value>
+
+                         </attribute>
+
+                      </class>
+
+                </attribute>
+
+             </class>
+
+       </sequence>
+
+    </attribute>
+
+    <attribute type="postprocessors">
+
+          <class type="MultiPostProcessor" version="1.0" category="postprocessor">
+
+             <attribute type="process_objects">
+
+                <sequence>
+
+                </sequence>
+
+             </attribute>
+
+          </class>
+
+    </attribute>
+
+    <attribute type="info">
+
+          <class type="JobInfo" version="0.1" category="jobinfos">
+
+             <attribute type="monitoring_links"> 
+
+                <sequence>
+
+                </sequence>
+
+             </attribute>
+
+             <attribute type="uuid"> 
+
+                 <value>'e981595b-a809-4887-84bb-981658be076f'</value>
+
+             </attribute>
+
+             <attribute type="submit_counter"> 
+
+                 <value>1</value>
+
+             </attribute>
+
+             <attribute type="monitor">
+
+                <value>None</value>
+
+             </attribute>
+
+          </class>
+
+    </attribute>
+
+    <attribute type="splitter">
+
+       <value>None</value>
+
+    </attribute>
+
+    <attribute type="inputsandbox">
+
+       <sequence>
+
+       </sequence>
+
+    </attribute>
+
+    <attribute type="outputdata">
+
+       <value>None</value>
+
+    </attribute>
+
+    <attribute type="time">
+
+          <class type="JobTime" version="0.0" category="jobtime">
+
+             <attribute type="timestamps"> 
+
+                 <value>{'backend_final': datetime.datetime(2019, 2, 15, 18, 22, 39), 'backend_completing': datetime.datetime(2019, 2, 15, 18, 22, 37), 'completing': datetime.datetime(2019, 2, 17, 17, 36, 46, 788551), 'submitted': datetime.datetime(2019, 2, 15, 15, 23, 6, 792748), 'running': datetime.datetime(2019, 2, 15, 15, 37, 54, 515783), 'submitting': datetime.datetime(2019, 2, 15, 15, 20, 0, 837362), 'new': datetime.datetime(2019, 2, 15, 15, 15, 25, 281601), 'backend_running': datetime.datetime(2019, 2, 15, 15, 24, 10), 'final': datetime.datetime(2019, 2, 17, 17, 36, 56, 265152)}</value>
+
+             </attribute>
+
+          </class>
+
+    </attribute>
+
+ </class>
+
+</root>
+
+
+

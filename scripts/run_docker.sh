@@ -4,4 +4,4 @@ docker run --name cassandra -p 127.0.0.1:9042:9042 -e CASSANDRA_CLUSTER_NAME=Gan
 
 docker run --name postgres -p 45432:5432 -e POSTGRES_PASSWORD=ganga -d postgres
 
-docker run --name mongo -p 27017:27017 mongo -d
+docker run --name mongo -p 27017:27017 -d mongo

@@ -4,16 +4,26 @@ import json
 import utils
 import pickle
 
-from mongo_db import *
+from db import *
 from glob import glob
 """
 Benching MOngoDB
 """
 
 SIZE = 100000
+BATCH_SIZE = None
 DB = "mongo"
 jobs, blobs = utils.load_pickle_data(size=SIZE)
 db = connect_mongo()
+
+if BATCH_SIZE:
+    add_jobs_batch(
+        db, jobs=jobs, batch_size=BATCH_SIZE
+    )
+    add_blobs_batch(
+        db, blobs=blobs, batch_size=BATCH_SIZE
+    )
+    
 add_jobs_mongo_loop(
     db, jobs=jobs
 )

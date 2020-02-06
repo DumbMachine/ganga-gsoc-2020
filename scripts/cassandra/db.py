@@ -7,8 +7,10 @@ from joblib import Parallel, delayed
 
 from cassandra.cluster import Cluster
 from cassandra import ConsistencyLevel
-from cassandra.query import SimpleStatement
+from cassandra.query import SimpleStatement, BatchStatement
 
+import warnings
+warnings.filterwarnings("ignore", message=" exceeding specified threshold of")
 
 
 
@@ -17,6 +19,10 @@ def cassandra_connection():
     """
     Connection object for Cassandra
     :return: session, cluster
+
+
+    sudo docker run --name cassandra -p 127.0.0.1:9042:9042 -e CASSANDRA_CLUSTER_NAME=GangaTest -e CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch -e CASSANDRA_DC=datacenter1 -d cassandra
+
     """
     cluster = Cluster(['127.0.0.1'], port=9042)
     session = cluster.connect()
@@ -100,31 +106,53 @@ def add_blobs_loop(session, jobs=None, blobs=None):
                     break
                 progress.update(1)
 
-# @bench_func
-# def add_blobs_mongo_batch(db, jobs=None, blobs=None, batch_size=None):
-#     """inserts the jobs in mongo instance"""
-#     if jobs:
-#         if not batch_size:
-#             db.jobs.insert_many(jobs)
-#             return
+@bench_func
+def add_blobs_batch(session, blobs=None, batch_size=250):
+    query = session.prepare("""
+        INSERT INTO BLOB(
+            jid, inputsandbox, outputsandbox, info,
+            comment, time, application, backend,
+            inputfiles, outputfiles, non_copyable_outputfiles,
+            id, status, name, inputdir, outputdir, inputdata,
+            outputdata, splitter, subjobs, master, postprocessors,
+            virtualization, merger, do_auto_resubmit, metadata, been_queued,
+            parallel_submit
+        ) VALUES (
+            ?, ?, ?, ?,
+            ?, ?, ?, ?,
+            ?, ?, ?,
+            ?, ?, ?, ?, ?, ?,
+            ?, ?, ?, ?, ?,
+            ?, ?, ?, ?, ?,
+            ?
+        )""")
+    start = 0
+    with tqdm(total=int(len(blobs)/batch_size)) as progress:
+        for end in range(batch_size, len(blobs)+1, batch_size):
+            batch = BatchStatement(consistency_level=ConsistencyLevel.QUORUM)
+            for row in blobs[start:end]:
+                batch.add(query, row)
 
-#         with tqdm(total=len(jobs)/batch_size) as progress:
-#             start = 0
-#             for batch in range(batch_size, len(jobs), batch_size):
-#                 db.jobs.insert_many(jobs[start:batch])
-#                 progress.update(1)
+            session.execute(batch)
+            progress.set_description(f"{start}-{end}")
+            progress.update(1)
+            start = end
 
 
-# @bench_func
-# def add_blobs_mongo_batch(db, jobs=None, blobs=None, batch_size=None):
-#     if blobs:
-#         if not batch_size:
-#             db.blobs.insert_many(blobs)
-#             return
+@bench_func
+def add_jobs_batch(session, jobs=None, batch_size=250):
+    query = session.prepare("""
+        INSERT INTO JOB(id, status, name, subjobs, application, backend, backend_actualCE, comment)
+        VALUES          (?,      ?,    ?,       ?,           ?,       ?,                ?,       ?)
+    """)
+    start = 0
+    with tqdm(total=int(len(jobs)/batch_size)) as progress:
+        for end in range(batch_size, len(jobs)+1, batch_size):
+            batch = BatchStatement(consistency_level=ConsistencyLevel.QUORUM)
+            for row in jobs[start:end]:
+                batch.add(query, row)
 
-#         with tqdm(total=len(blobs)/batch_size) as progress:
-#             start = 0
-#             for batch in range(batch_size, len(jobs), batch_size):
-#                 db.blobs.insert_many(blobs[start:batch])
-#                 progress.update(1)
-
+            session.execute(batch)
+            progress.set_description(f"{start}-{end}")
+            progress.update(1)
+            start = end

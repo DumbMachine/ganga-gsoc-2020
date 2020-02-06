@@ -17,12 +17,22 @@ jobs, blobs = utils.load_pickle_data(size=SIZE)
 session, cluster = cassandra_connection()
 session = create_tables(session)
 
-add_jobs_loop(
-    session, jobs=jobs
-)
-add_blobs_loop(
+
+# add_jobs_batch(
+#     session, jobs=jobs
+# )
+
+add_blobs_batch(
     session, blobs=blobs
 )
+
+# add_jobs_loop(
+#     session, jobs=jobs
+# )
+
+# add_blobs_loop(
+#     session, blobs=blobs
+# )
 
 if not os.path.isdir("../benchmarks"):
     os.makedirs("./benchmarks")
@@ -37,27 +47,3 @@ json.dump(
 #     utils.TIMES,
 #     open("")
 # )
-
-
-
-"backend",
-"inputfiles",
-"outputfiles",
-"non_copyable_outputfiles",
-"id",
-"status",
-"name",
-"inputdir",
-"outputdir",
-"inputdata",
-"outputdata",
-"splitter",
-"subjobs",
-"master",
-"postprocessors",
-"virtualization",
-"merger",
-"do_auto_resubmit",
-"metadata",
-"been_queued",
-"parallel_submit",

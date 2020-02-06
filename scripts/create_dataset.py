@@ -13,7 +13,7 @@ INSERT_JOB = '''
     VALUES          (?,      ?,    ?,       ?,           ?,       ?,                ?,       ?)
 '''
 
-CREATION_BLOB = """ 
+CREATION_BLOB = """
     CREATE TABLE IF NOT EXISTS BLOB(
         id INT PRIMARY KEY,
         inputsandbox BLOB,
@@ -45,7 +45,7 @@ CREATION_BLOB = """
     )
 """
 
-INSERT_BLOBS = """  
+INSERT_BLOBS = """
     INSERT INTO BLOB(
         id, inputsandbox, outputsandbox, info, comment, time, application, backend, inputfiles,
         outputfiles, non_copyable_outputfiles, status, name, inputdir, outputdir,
@@ -73,5 +73,5 @@ cursor.execute(INSERT_BLOBS, bo[0])
 
 inputsandbox, jid, outputsandbox, info, comment, time, application, backend,
 inputfiles, outputfiles, non_copyable_outputfiles, id, status, name, inputdir,
-outputdir, inputdata, outputdata, splitter, subjobs, master, postprocessors, 
+outputdir, inputdata, outputdata, splitter, subjobs, master, postprocessors,
 virtualization, merger, do_auto_resubmit, metadata, been_queued, parallel_submit

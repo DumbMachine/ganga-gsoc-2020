@@ -22,7 +22,7 @@ def connect_mongo():
     return db
 
 @bench_func
-def add_jobs_mongo_loop(db, jobs=None, blobs=None):
+def add_jobs_loop(db, jobs=None, blobs=None):
     """inserts the jobs in mongo instance"""
     # for i, (row, blob) in enumerate(zip(jobs, blobs)):
     if jobs:
@@ -37,7 +37,7 @@ def add_jobs_mongo_loop(db, jobs=None, blobs=None):
                 progress.update(1)
 
 @bench_func
-def add_blobs_mongo_loop(db, jobs=None, blobs=None):
+def add_blobs_loop(db, jobs=None, blobs=None):
     if blobs:
         with tqdm(total=len(jobs)) as progress:
             for i, row in enumerate(blobs):
@@ -50,7 +50,7 @@ def add_blobs_mongo_loop(db, jobs=None, blobs=None):
                 progress.update(1)
 
 @bench_func
-def add_blobs_mongo_batch(db, jobs=None, blobs=None, batch_size=None):
+def add_blobs_batch(db, jobs=None, blobs=None, batch_size=None):
     """inserts the jobs in mongo instance"""
     if jobs:
         if not batch_size:
@@ -65,7 +65,7 @@ def add_blobs_mongo_batch(db, jobs=None, blobs=None, batch_size=None):
 
 
 @bench_func
-def add_blobs_mongo_batch(db, jobs=None, blobs=None, batch_size=None):            
+def add_blobs_batch(db, jobs=None, blobs=None, batch_size=None):
     if blobs:
         if not batch_size:
             db.blobs.insert_many(blobs)

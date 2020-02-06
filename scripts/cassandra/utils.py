@@ -52,10 +52,10 @@ def connect_mongo():
 
 @bench_func
 def load_pickle_data(size=100000):
-    jobs = pickle.load(open("../rows.pkl", "rb"))[:size]
+    jobs = pickle.load(open("../../data/rows.pkl", "rb"))[:size]
     jobs= [[i]+row[1:] for i, row in enumerate(jobs)]
 
-    _blobs = pickle.load(open("../blobs.pkl", "rb"))[:size]
+    _blobs = pickle.load(open("../../data/blobs.pkl", "rb"))[:size]
     blobs = []
     for i, blob in enumerate(_blobs):
         blob["jid"] = i+1

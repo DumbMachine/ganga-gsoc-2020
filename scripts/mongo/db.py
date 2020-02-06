@@ -39,21 +39,22 @@ def add_jobs_loop(db, jobs=None, blobs=None):
 @bench_func
 def add_blobs_loop(db, jobs=None, blobs=None):
     if blobs:
-        with tqdm(total=len(jobs)) as progress:
+        with tqdm(total=len(blobs)) as progress:
             for i, row in enumerate(blobs):
                 row['_id'] = i+16
                 try:
-                    db.jobs.insert_one({"data":row})
+                    db.blobs.insert_one({"data":row})
                 except pymongo.errors.DuplicateKeyError as e:
                     print(e)
                     break
                 progress.update(1)
 
 @bench_func
-def add_blobs_batch(db, jobs=None, blobs=None, batch_size=None):
+def add_jobs_batch(db, jobs=None, blobs=None, batch_size=False):
     """inserts the jobs in mongo instance"""
+    jobs = [{"data":row} for i, row in enumerate(jobs)]
     if jobs:
-        if not batch_size:
+        if not batch_size or batch_size > len(jobs):
             db.jobs.insert_many(jobs)
             return
 
@@ -65,9 +66,11 @@ def add_blobs_batch(db, jobs=None, blobs=None, batch_size=None):
 
 
 @bench_func
-def add_blobs_batch(db, jobs=None, blobs=None, batch_size=None):
+def add_blobs_batch(db, jobs=None, blobs=None, batch_size=False):
+    blobs = [{"data":row} for i, row in enumerate(blobs)]
     if blobs:
-        if not batch_size:
+        if not batch_size or batch_size > len(blobs):
+            print("Sx")
             db.blobs.insert_many(blobs)
             return
 

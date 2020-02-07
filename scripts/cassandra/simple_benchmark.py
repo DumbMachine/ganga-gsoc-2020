@@ -7,43 +7,45 @@ import pickle
 from db import *
 from glob import glob
 """
-Benching MOngoDB
+Benching Cassandra
 """
 
-SIZE = 100000
+SIZE = 10000
 DB = "postgres"
-jobs, blobs = utils.load_pickle_data(size=SIZE)
 
+if len(sys.argv) > 2:
+    SIZE, BATCH_SIZE = int(sys.argv[1]), int(sys.argv[2])
+
+jobs, blobs = utils.load_pickle_data(size=SIZE)
 session, cluster = cassandra_connection()
 session = create_tables(session)
 
 
-# add_jobs_batch(
-#     session, jobs=jobs
-# )
-
-add_blobs_batch(
-    session, blobs=blobs
-)
-
-# add_jobs_loop(
-#     session, jobs=jobs
-# )
-
-# add_blobs_loop(
-#     session, blobs=blobs
-# )
+if BATCH_SIZE:
+    print("DOING BATCH SIZE")
+    add_jobs_batch(
+        session, jobs=jobs, batch_size=BATCH_SIZE
+    )
+    add_blobs_batch(
+        session, blobs=blobs, batch_size=BATCH_SIZE
+    )
+else:
+    print(f"DOING LINEAR {SIZE}")
+    add_jobs_loop(
+        session, jobs=jobs
+    )
+    add_blobs_loop(
+        session, blobs=blobs
+    )
+query_jobs_all(session, "JOB")
+query_blobs_all(session, "BLOB")
 
 if not os.path.isdir("../benchmarks"):
     os.makedirs("./benchmarks")
 
-filename = f"{DB}*.json"
+filename = f"../benchmarks/*-size-*-batch_size-*-itertion-*.json"
 iteration = len(glob(f"../benchmarks/{filename}") )
 json.dump(
     utils.TIMES,
-    open(f"../benchmarks/{DB}-size-{SIZE}-itertion-{iteration}.json", "w+")
+    open(f"../benchmarks/{DB}-size-{SIZE}-batch_size-{BATCH_SIZE}-itertion-{iteration}.json", "w+")
 )
-# pickle.dump(
-#     utils.TIMES,
-#     open("")
-# )

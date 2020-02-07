@@ -68,10 +68,3 @@ INSERT_BLOBS = """
 """
 
 cursor.execute(INSERT_BLOBS, bo[0])
-
-
-
-inputsandbox, jid, outputsandbox, info, comment, time, application, backend,
-inputfiles, outputfiles, non_copyable_outputfiles, id, status, name, inputdir,
-outputdir, inputdata, outputdata, splitter, subjobs, master, postprocessors,
-virtualization, merger, do_auto_resubmit, metadata, been_queued, parallel_submit

@@ -1,0 +1,8 @@
+{
+    "load_pickle_data_batch": 0.29190754890441895,
+    "connect_mongo": 0.0009865760803222656,
+    "add_jobs_loop": 3.3233892917633057,
+    "add_blobs_loop": 4.655829906463623,
+    "query_jobs_all": 0.04652857780456543,
+    "query_blobs_all": 0.6184749603271484
+}

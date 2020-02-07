@@ -38,7 +38,7 @@ def cassandra_connection():
 @bench_func
 def create_tables(session):
     session.execute("""CREATE TABLE IF NOT EXISTS JOB(
-        id INT PRIMARY KEY, status varchar, name varchar, subjobs INT, application varchar,
+        jid INT PRIMARY KEY, status varchar, name varchar, subjobs INT, application varchar,
         backend varchar, backend_actualCE varchar, comment varchar
     )""")
     session.execute("""
@@ -59,7 +59,7 @@ def add_jobs_loop(session, jobs=None, blobs=None):
     """inserts the jobs in mongo instance"""
     # for i, (row, blob) in enumerate(zip(jobs, blobs)):
     query = session.prepare("""
-        INSERT INTO JOB(id, status, name, subjobs, application, backend, backend_actualCE, comment)
+        INSERT INTO JOB(jid, status, name, subjobs, application, backend, backend_actualCE, comment)
         VALUES          (?,      ?,    ?,       ?,           ?,       ?,                ?,       ?)
     """)
 
@@ -67,11 +67,7 @@ def add_jobs_loop(session, jobs=None, blobs=None):
         with tqdm(total=len(jobs)) as progress:
             for i, row in enumerate(jobs):
                 row[0] = i+1
-                try:
-                    session.execute(query.bind(row))
-                except Exception as e:
-                    print(e)
-                    break
+                session.execute(query.bind(row))
                 progress.update(1)
 
 @bench_func
@@ -99,11 +95,7 @@ def add_blobs_loop(session, jobs=None, blobs=None):
         with tqdm(total=len(blobs)) as progress:
             for i, blob in enumerate(blobs):
                 blob['jid'] = i+1
-                try:
-                    session.execute(query.bind(blob))
-                except Exception as e:
-                    print(e)
-                    break
+                session.execute(query.bind(blob))
                 progress.update(1)
 
 @bench_func
@@ -142,7 +134,7 @@ def add_blobs_batch(session, blobs=None, batch_size=250):
 @bench_func
 def add_jobs_batch(session, jobs=None, batch_size=250):
     query = session.prepare("""
-        INSERT INTO JOB(id, status, name, subjobs, application, backend, backend_actualCE, comment)
+        INSERT INTO JOB(jid, status, name, subjobs, application, backend, backend_actualCE, comment)
         VALUES          (?,      ?,    ?,       ?,           ?,       ?,                ?,       ?)
     """)
     start = 0
@@ -156,3 +148,17 @@ def add_jobs_batch(session, jobs=None, batch_size=250):
             progress.set_description(f"{start}-{end}")
             progress.update(1)
             start = end
+
+
+@bench_func
+def query_jobs_all(session, table="JOB"):
+    rows = [*session.execute(f"""
+        SELECT * from {table}
+    """)]
+
+@bench_func
+def query_blobs_all(session, table="BLOB"):
+    rows = [*session.execute(f"""
+        SELECT * from {table}
+    """)]
+

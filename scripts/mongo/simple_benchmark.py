@@ -18,7 +18,7 @@ if len(sys.argv) > 2:
     SIZE, BATCH_SIZE = int(sys.argv[1]), int(sys.argv[2])
 
 jobs, blobs = utils.load_pickle_data_batch(size=SIZE)
-db = connect_mongo()
+db = connect()
 
 if BATCH_SIZE:
     print("DOING BATCH SIZE")

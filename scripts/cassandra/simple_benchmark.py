@@ -17,7 +17,7 @@ if len(sys.argv) > 2:
     SIZE, BATCH_SIZE = int(sys.argv[1]), int(sys.argv[2])
 
 jobs, blobs = utils.load_pickle_data(size=SIZE)
-session, cluster = cassandra_connection()
+session, cluster = connect()
 session = create_tables(session)
 
 
@@ -37,6 +37,8 @@ else:
     add_blobs_loop(
         session, blobs=blobs
     )
+
+
 query_jobs_all(session, "JOB")
 query_blobs_all(session, "BLOB")
 

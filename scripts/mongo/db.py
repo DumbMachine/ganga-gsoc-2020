@@ -12,7 +12,7 @@ from utils import bench_func
 
 @bench_func
 # @profile
-def connect_mongo():
+def connect():
     """connect to defualt mongo instance at port 27017
 
     docker run --name mongo -p 27017:27017 mongo -d

@@ -6,7 +6,7 @@ from tqdm import tqdm
 from sqlalchemy import Table, Column, Integer, String, ForeignKey, Binary
 
 @bench_func
-def connect_post(user, password, db, host='localhost', port=5432):
+def connect(user, password, db, host='localhost', port=5432):
     '''Returns a connection and a metadata object
 
     sudo docker stop postgres; sudo docker rm postgres; sudo docker run --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=ganga -d postgres

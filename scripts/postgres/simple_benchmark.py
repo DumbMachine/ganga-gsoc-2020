@@ -17,7 +17,7 @@ BATCH_SIZE = 250
 if len(sys.argv) > 2:
     SIZE, BATCH_SIZE = int(sys.argv[1]), int(sys.argv[2])
 
-con, meta = connect_post('postgres', 'ganga', 'jobs')
+con, meta = connect('postgres', 'ganga', 'jobs')
 JOBS, BLOBS = create_tables(con ,meta)
 
 if BATCH_SIZE:
@@ -45,7 +45,7 @@ query_jobs_all(con, "jobs")
 query_blobs_all(con, "blobs")
 
 if not os.path.isdir("../benchmarks"):
-    os.makedirs("./benchmarks")
+    os.makedirs("../benchmarks")
 
 filename = f"../benchmarks/*-size-*-batch_size-*-itertion-*.json"
 iteration = len(glob(f"../benchmarks/{filename}") )

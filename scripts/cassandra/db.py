@@ -15,7 +15,7 @@ warnings.filterwarnings("ignore", message=" exceeding specified threshold of")
 
 
 @bench_func
-def cassandra_connection():
+def connect():
     """
     Connection object for Cassandra
     :return: session, cluster
@@ -99,7 +99,7 @@ def add_blobs_loop(session, jobs=None, blobs=None):
                 progress.update(1)
 
 @bench_func
-def add_blobs_batch(session, blobs=None, batch_size=250):
+def add_blobs_batch(session, blobs=None, batch_size=50):
     query = session.prepare("""
         INSERT INTO BLOB(
             jid, inputsandbox, outputsandbox, info,
@@ -121,12 +121,12 @@ def add_blobs_batch(session, blobs=None, batch_size=250):
     start = 0
     with tqdm(total=int(len(blobs)/batch_size)) as progress:
         for end in range(batch_size, len(blobs)+1, batch_size):
+            progress.set_description(f"{start}-{end}")
             batch = BatchStatement(consistency_level=ConsistencyLevel.QUORUM)
             for row in blobs[start:end]:
                 batch.add(query, row)
 
             session.execute(batch)
-            progress.set_description(f"{start}-{end}")
             progress.update(1)
             start = end
 
@@ -161,4 +161,3 @@ def query_blobs_all(session, table="BLOB"):
     rows = [*session.execute(f"""
         SELECT * from {table}
     """)]
-

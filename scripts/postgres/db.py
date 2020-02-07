@@ -7,13 +7,17 @@ from sqlalchemy import Table, Column, Integer, String, ForeignKey, Binary
 
 @bench_func
 def connect_post(user, password, db, host='localhost', port=5432):
-    '''Returns a connection and a metadata object'''
+    '''Returns a connection and a metadata object
+
+    sudo docker stop postgres; sudo docker rm postgres; sudo docker run --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=ganga -d postgres
+
+    '''
 
     url = 'postgresql://{}:{}@{}:{}/{}'
     url = url.format(user, password, host, port, db)
 
     try:
-        con = sqlalchemy.create_engine(url, client_encoding='utf8')
+        con = sqlalchemy.create_engine(url, client_encoding='utf8',  executemany_mode='batch')
         meta = sqlalchemy.MetaData(bind=con, reflect=True)
     except Exception as e:
         if "does not exist" in str(e):
@@ -30,7 +34,7 @@ def connect_post(user, password, db, host='localhost', port=5432):
 def create_tables(con, meta):
     JOBS = Table(
             f"jobs", meta,
-            Column("id", Integer, primary_key=True),
+            Column("jid", Integer, primary_key=True),
             Column("status", String),
             Column("name", String),
             Column("subjobs", Integer),
@@ -43,7 +47,7 @@ def create_tables(con, meta):
 
     BLOBS = Table(
             f"blobs", meta,
-            Column("jid", Integer, ForeignKey("JOBS.id")),
+            Column("jid", Integer, ForeignKey("jobs.jid")),
             Column("inputsandbox", Binary),
             Column("outputsandbox", Binary),
             Column("info", Binary),
@@ -75,27 +79,71 @@ def create_tables(con, meta):
         )
 
     meta.create_all(con)
-
+    return JOBS, BLOBS
 
 @bench_func
-def add_jobs_post_loop(con, jobs=None, blobs=None):
+def add_jobs_loop(con, JOBS=None, BLOBS=None, jobs=None, blobs=None):
     """inserts the job data in a loop"""
     if jobs:
         with tqdm(total=len(jobs)) as progress:
+            progress.set_description("inserting jobs")
             for i, row in enumerate(jobs):
                 row[0] = i+1
                 insert_job = JOBS.insert().values(row)
-                try:
-                    con.execute(insert_job)
-                except Exception as e:
-                    print(e)
-                    break
+                con.execute(insert_job)
                 progress.update(1)
 
-# @bench_func
-# def add_blobs_post_loop(db, jobs=None, blobs=None):
+@bench_func
+def add_blobs_loop(con, BLOBS=None, blobs=None):
+    """inserts the job data in a loop"""
+    if blobs:
+        with tqdm(total=len(blobs)) as progress:
+            progress.set_description("inserting blobs")
+            for i, row in enumerate(blobs):
+                insert_blob = BLOBS.insert().values(row)
+                con.execute(insert_blob)
+                progress.update(1)
 
-# @bench_func
-# def add_blobs_post_batch(db, jobs=None, blobs=None, batch_size=None):
-# @bench_func
-# def add_blobs_post_batch(db, jobs=None, blobs=None, batch_size=None):
+@bench_func
+def add_jobs_batch(con, JOBS=None, jobs=None, batch_size=250):
+
+    start = 0
+    with tqdm(total=int(len(jobs)/batch_size)) as progress:
+        for end in range(batch_size, len(jobs)+1, batch_size):
+            con.execute(
+                JOBS.insert(),
+                jobs[start:end]
+            )
+            progress.set_description(f"{start}-{end}")
+            progress.update(1)
+            start = end
+
+
+@bench_func
+def add_blobs_batch(con, BLOBS=None, blobs=None, batch_size=250):
+    start = 0
+    with tqdm(total=int(len(blobs)/batch_size)) as progress:
+        for end in range(batch_size, len(blobs)+1, batch_size):
+            con.execute(
+                BLOBS.insert(),
+                blobs[start:end]
+            )
+            progress.set_description(f"{start}-{end}")
+            progress.update(1)
+            start = end
+
+
+@bench_func
+def query_jobs_all(con, table="jobs"):
+    rows = [*con.execute(f"""
+        SELECT * from {table}
+    """)]
+
+
+@bench_func
+def query_blobs_all(con, table="blobs"):
+    rows = [*con.execute(f"""
+        SELECT * from {table}
+    """)]
+
+

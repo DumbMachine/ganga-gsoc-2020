@@ -1,3 +1,5 @@
+import copy
+
 import time
 import pickle
 
@@ -10,7 +12,6 @@ from pymongo import MongoClient
 from cassandra import ConsistencyLevel
 from cassandra.cluster import Cluster
 from cassandra.query import SimpleStatement
-
 import sqlalchemy
 from sqlalchemy import Binary, Column, ForeignKey, Integer, String, Table
 
@@ -37,21 +38,34 @@ def bench_func(func):
         return value
     return function_timer
 
-
-@bench_func
-def connect_mongo():
-    """connect to defualt mongo instance at port 27017
-
-    docker run --name mongo -p 27017:27017 mongo -d
-
-    """
-
-    client = MongoClient('localhost', 27017)
-    db = client.ganga_test
-    return db
-
 @bench_func
 def load_pickle_data(size=100000):
+    jobs = pickle.load(open("../../data/rows.pkl", "rb"))[:size]
+    rows = []
+    for itr, job in enumerate(jobs):
+        row = {}
+        for header, value in zip(
+            ['jid', 'status', 'name', 'subjobs', 'application',
+            'backend', 'backend_actualCE', 'comment'],
+            job
+        ):
+            row[header] = value
+
+        row["jid"] = itr
+        rows.append(row)
+    jobs = rows
+
+
+    _blobs = pickle.load(open("../../data/blobs.pkl", "rb"))[:size]
+    blobs = []
+    for i, blo in enumerate(_blobs):
+        # FIXME: Dirty patch, for some reason any change to a single element fof blobs array, goes to all the elements. I decided to create copies after failing to debug this at that time.
+        blob = copy.deepcopy(blo)
+        blob["jid"] = i
+        blobs.append(blob)
+    return jobs, blobs
+
+def load_pickle_data_linear(size=100000):
     jobs = pickle.load(open("../../data/rows.pkl", "rb"))[:size]
     jobs= [[i]+row[1:] for i, row in enumerate(jobs)]
 
@@ -64,52 +78,3 @@ def load_pickle_data(size=100000):
     #     blobs.update
     # ]
     return jobs, blobs
-
-@bench_func
-def add_jobs_mongo_loop(db, jobs=None, blobs=None):
-    """inserts the jobs in mongo instance"""
-    # for i, (row, blob) in enumerate(zip(jobs, blobs)):
-    if jobs:
-        for i, row in enumerate(jobs):
-            row[0] = i+1
-            try:
-                db.jobs.insert_one({"data":row})
-            except pymongo.errors.DuplicateKeyError as e:
-                print(e)
-                break
-
-@bench_func
-def add_blobs_mongo_loop(db, jobs=None, blobs=None):
-    if blobs:
-        for i, row in enumerate(blobs):
-            row['_id'] = i+1
-            try:
-                db.jobs.insert_one({"data":row})
-            except pymongo.errors.DuplicateKeyError as e:
-                print(e)
-                break
-
-@bench_func
-def add_blobs_mongo_batch(db, jobs=None, blobs=None, batch_size=None):
-    """inserts the jobs in mongo instance"""
-    if jobs:
-        if not batch_size:
-            db.jobs.insert_many(jobs)
-            return
-
-        start = 0
-        for batch in range(batch_size, len(jobs), batch_size):
-            db.jobs.insert_many(jobs[start:batch])
-
-
-@bench_func
-def add_blobs_mongo_batch(db, jobs=None, blobs=None, batch_size=None):            
-    if blobs:
-        if not batch_size:
-            db.blobs.insert_many(blobs)
-            return
-
-        start = 0
-        for batch in range(batch_size, len(jobs), batch_size):
-            db.blobs.insert_many(blobs[start:batch])
-

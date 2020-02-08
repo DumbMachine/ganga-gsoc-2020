@@ -1,0 +1,206 @@
+[2020-02-08 02:40:04,507 pyinotify DEBUG] Event queue size: 96
+[2020-02-08 02:40:04,507 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,507 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,507 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+[2020-02-08 02:40:04,512 pyinotify DEBUG] Event queue size: 32
+[2020-02-08 02:40:04,513 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+[2020-02-08 02:40:04,513 pyinotify DEBUG] Event queue size: 64
+[2020-02-08 02:40:04,513 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,513 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+[2020-02-08 02:40:04,519 pyinotify DEBUG] Event queue size: 96
+[2020-02-08 02:40:04,519 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,519 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,519 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+[2020-02-08 02:40:04,524 pyinotify DEBUG] Event queue size: 64
+[2020-02-08 02:40:04,524 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,525 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+[2020-02-08 02:40:04,525 pyinotify DEBUG] Event queue size: 32
+[2020-02-08 02:40:04,525 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+[2020-02-08 02:40:04,532 pyinotify DEBUG] Event queue size: 64
+[2020-02-08 02:40:04,532 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,532 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+[2020-02-08 02:40:04,532 pyinotify DEBUG] Event queue size: 64
+[2020-02-08 02:40:04,533 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,533 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+[2020-02-08 02:40:04,538 pyinotify DEBUG] Event queue size: 64
+[2020-02-08 02:40:04,538 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,538 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+[2020-02-08 02:40:04,538 pyinotify DEBUG] Event queue size: 32
+[2020-02-08 02:40:04,539 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+[2020-02-08 02:40:04,543 pyinotify DEBUG] Event queue size: 96
+[2020-02-08 02:40:04,543 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,543 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,544 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+[2020-02-08 02:40:04,549 pyinotify DEBUG] Event queue size: 96
+[2020-02-08 02:40:04,549 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,549 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,549 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+[2020-02-08 02:40:04,554 pyinotify DEBUG] Event queue size: 96
+[2020-02-08 02:40:04,554 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,554 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,554 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+[2020-02-08 02:40:04,558 pyinotify DEBUG] Event queue size: 96
+[2020-02-08 02:40:04,558 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,558 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,558 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+[2020-02-08 02:40:04,571 pyinotify DEBUG] Event queue size: 96
+[2020-02-08 02:40:04,572 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,572 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,572 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+[2020-02-08 02:40:04,572 pyinotify DEBUG] Event queue size: 960
+[2020-02-08 02:40:04,572 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,572 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,572 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+[2020-02-08 02:40:04,572 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,572 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,573 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+[2020-02-08 02:40:04,573 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,573 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,573 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+[2020-02-08 02:40:04,573 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,573 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,573 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+[2020-02-08 02:40:04,573 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,573 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,573 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+[2020-02-08 02:40:04,573 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,573 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,573 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+[2020-02-08 02:40:04,573 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,573 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,573 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+[2020-02-08 02:40:04,573 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,573 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,573 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+[2020-02-08 02:40:04,573 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,574 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,574 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+[2020-02-08 02:40:04,574 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,574 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,574 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+[2020-02-08 02:40:04,578 pyinotify DEBUG] Event queue size: 960
+[2020-02-08 02:40:04,579 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,579 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,579 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+[2020-02-08 02:40:04,579 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,579 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,579 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+[2020-02-08 02:40:04,579 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,579 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,579 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+[2020-02-08 02:40:04,579 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,579 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,579 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+[2020-02-08 02:40:04,579 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,579 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,579 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+[2020-02-08 02:40:04,579 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,579 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,579 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+[2020-02-08 02:40:04,580 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,580 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,580 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+[2020-02-08 02:40:04,580 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,580 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,580 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+[2020-02-08 02:40:04,580 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,580 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,580 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+[2020-02-08 02:40:04,580 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000020 name=sessions wd=1 >
+[2020-02-08 02:40:04,580 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000001 name=sessions wd=1 >
+[2020-02-08 02:40:04,580 pyinotify DEBUG] <_RawEvent cookie=0 mask=0x40000010 name=sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000020 maskname=IN_OPEN|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000001 maskname=IN_ACCESS|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+<Event dir=True mask=0x40000010 maskname=IN_CLOSE_NOWRITE|IN_ISDIR name=sessions path=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0 pathname=/home/needshelp/gangadir/repository/needshelp/LocalXML/6.0/sessions wd=1 >
+

@@ -11,7 +11,7 @@ Benching Cassandra
 """
 
 SIZE = 10000
-DB = "postgres"
+DB = "cassandra"
 
 if len(sys.argv) > 2:
     SIZE, BATCH_SIZE = int(sys.argv[1]), int(sys.argv[2])

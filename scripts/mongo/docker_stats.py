@@ -106,42 +106,82 @@ def plt_docker_db(filename):
 
 
     io = []
-    for (i, j) in [i['BLOCK I/O'].replace("kB", "").replace("0B", "0").split("/") for i in data]:
-        if "MB" in i:
-            i = float(i.replace("MB", ""))*1024 # for kbs
-        if "MB" in j:
-            j = float(j.replace("MB", ""))*1024 # for kbs
+    for (i, j) in [i['BLOCK I/O'].replace("0B", "0").split("/") for i in data]:
+        if i == '':
+            i = 0
+        else:
+            if "kB" in i:
+                i = float(i.replace("kB", "")) # for kbs
+            elif "MB" in i:
+                i = float(i.replace("MB", ""))*1024 # for kbs
+            elif "GB" in i:
+                i = float(i.replace("GB", ""))*1024*1024 # for kbs
 
-        i = 0 if i == '' else float(i)
-        j = 0 if j == '' else float(j)
-        io.append((i,j))
+        if j == '':
+            j = 0
+        else:
+            if "kB" in j:
+                j = float(j.replace("kB", "")) # for kbs
+            elif "MB" in j:
+                j = float(j.replace("MB", ""))*1024 # for kbs
+            elif "GB" in j:
+                j = float(j.replace("GB", ""))*1024*1024 # for kbs
+        io.append([i, j])
+
 
     net_io = []
-    for (i, j) in [i['NET I/O'].replace("kB", "").replace("0B", "0").split("/") for i in data]:
-        if "MB" in i:
-            i = float(i.replace("MB", ""))*1024 # for kbs
-        if "MB" in j:
-            j = float(j.replace("MB", ""))*1024 # for kbs
+    for (i, j) in [i['NET I/O'].replace("0B", "0").split("/") for i in data]:
+        if i == '':
+            i = 0
+        else:
+            if "kB" in i:
+                i = float(i.replace("kB", "")) # for kbs
+            elif "MB" in i:
+                i = float(i.replace("MB", ""))*1024 # for kbs
+            elif "GB" in i:
+                i = float(i.replace("GB", ""))*1024*1024 # for kbs
 
-        i = 0 if i == '' else float(i)
-        j = 0 if j == '' else float(j)
-        net_io.append((i,j))
+        if j == '':
+            j = 0
+        else:
+            if "kB" in j:
+                j = float(j.replace("kB", "")) # for kbs
+            elif "MB" in j:
+                j = float(j.replace("MB", ""))*1024 # for kbs
+            elif "GB" in j:
+                j = float(j.replace("GB", ""))*1024*1024 # for kbs
+        net_io.append([i, j])
+
 
 
     plt.plot(cpu_usage, label="cpu_usage")
     plt.plot(mem_usage_percent, label="mem_usage")
     plt.legend(loc="upper left")
-    plt.savefig(f"../benchmarks/PLOT-USGE-PRCNT-{filename.split('/')[-1]}.png", dpi=100)
+    plt.savefig(f"../images/PLOT-USGE-PRCNT-{filename.split('/')[-1]}.png", dpi=100)
     plt.clf()
 
     plt.plot(mem_usage_total, label="mem_usage_total")
     plt.plot([i[0] for i in io], label="io")
     plt.plot([i[0] for i in net_io], label="net_io")
     plt.legend(loc="upper left")
-    plt.savefig(f"../benchmarks/PLOT-USGE-{filename.split('/')[-1]}.png", dpi=100)
+    plt.savefig(f"../images/PLOT-USGE-{filename.split('/')[-1]}.png", dpi=100)
 
 
 
-# def plot_all_docker():
-#     files = glob("*performance.json")
-#     for attribute in ["CPU %", "MEM USAGE/LIMIT", "MEM %", "NET I/O", "BLOCK I/O"]
+
+def plot_mem_usage_percent(size=10000, batch_size=1, iteration=1):
+    filename = f"../benchmarks/*-performance-size-{size}-batch_size-{batch_size}-*{iteration}.json"
+    files = glob(filename)
+    plot_points = {}
+    for file in files:
+        data = json.load(open(file, 'r'))['stats']
+        mem_usage_percent = [float(i['MEM %'][:-1]) for i in data]
+        plot_points[file.split("/")[-1].split("-")[0]] = mem_usage_percent
+
+
+    for key in plot_points.keys():
+        plt.plot(plot_points[key], label=key)
+
+    plt.title("mem_usage_percent")
+    plt.legend(loc="upper left")
+    plt.savefig(f"../images/mem_usage_percent-{size}-{batch_size}.png", dpi=100)

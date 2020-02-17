@@ -1,1 +1,0 @@
-{"connect": 0.037049055099487305, "create_tables": 0.028670787811279297, "load_pickle_data": 0.31909751892089844, "add_jobs_batch": 29.021175622940063, "add_blobs_batch": 50.98590803146362, "query_jobs_all": 0.028615951538085938, "query_blobs_all": 2.799755334854126}

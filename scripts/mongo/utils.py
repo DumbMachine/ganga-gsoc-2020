@@ -1,3 +1,5 @@
+from threading import Thread
+import os
 import copy
 import time
 import pickle
@@ -44,6 +46,11 @@ def load_pickle_data(size=100000):
     return jobs, blobs
 
 
+def docker_stats(func):
+    """
+    This function will have a background process that takes care of checking the thing
+    """
+    raise NotImplemented
 
 
 @bench_func

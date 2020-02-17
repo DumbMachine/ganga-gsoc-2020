@@ -45,3 +45,9 @@ I will run the benchmrk for the following values:
 - BATCHS : 1, 10 ,100 ,1000, 10000
 
 """
+
+#  Plotting the cpu usage
+filename = "mongo/mongo_performance.json"
+import json
+
+data = json.load(open(filename. 'r'))

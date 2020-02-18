@@ -1,14 +1,19 @@
-from threading import Thread
-import os
 import copy
-import time
+import json
+import os
 import pickle
+import subprocess
+import time
+from glob import glob
+from threading import Thread
 
-from tqdm import tqdm
-from joblib import Parallel, delayed
-
+import matplotlib.pyplot as plt
 import pymongo
+from joblib import Parallel, delayed
 from pymongo import MongoClient
+from tqdm import tqdm
+
+import docker
 
 TIMES = {}
 
@@ -79,3 +84,74 @@ def load_pickle_data_batch(size=100000):
         blob["id"] = i
         blobs.append(blob)
     return jobs, blobs
+
+
+# def docker_stats(name, interval, filename):
+#     client = docker.from_env()
+#     if not os.path.isfile(filename):
+#         json.dump({"stats": []}, open(filename, "w"))
+#     while True:
+#         found_container = False
+#         time.sleep(interval)
+
+#         for container in client.containers.list():
+#             if container.name == name:
+#                 try:
+#                     found_container = True
+#                     data = json.load(open(filename, "r"))
+#                     data["stats"].append(container.stats(stream=False))
+#                     json.dump(data, open(filename, "w+"))
+#                 except json.decoder.JSONDecodeError:
+#                     print(f"I guess you have stopped {name} container now")
+
+#         if not found_container:
+#             print("Coudn't find the container, exiting now")
+#             exit(0)
+
+
+def docker_stats(dummy1, dummy2,filename):
+    print("Docker thread is listening now")
+    filename = filename.replace("operations", "performance")
+    name="mongo"
+    interval = 0
+    things = {
+        'CONTAINER ID': None,
+        'NAME': None,
+        'CPU %': None,
+        'MEM USAGE/LIMIT': None,
+        'MEM %': None,
+        'NET I/O': None,
+        'BLOCK I/O': None,
+        'PIDS': None
+    }
+    if not os.path.isfile(filename):
+        json.dump({"stats": []}, open(filename, "w+"))
+
+    proc = subprocess.Popen(["sudo", "docker",  "stats"],stdout=subprocess.PIPE)
+    while True:
+        time.sleep(interval)
+        line = proc.stdout.readline()
+        if not line:
+            break
+        if "CPU %" not in line.decode("utf-8"):
+            items = line.decode("utf-8").split()
+            things["CONTAINER ID"] = items[0]
+            things['NAME'] = items[1]
+            things['CPU %'] = items[2]
+            things['MEM USAGE/LIMIT'] = " ".join(items[3:6])
+            things['MEM %'] = items[6]
+            things['NET I/O'] = " ".join(items[7:10])
+            things['BLOCK I/O'] = " ".join(items[10:-2])
+            things['PIDS'] = items[-1]
+
+            data = json.load(open(filename, "r"))
+            data["stats"].append(things)
+            json.dump(data, open(filename, "w+"))
+
+
+        pids = glob("../benchmarks/pid")
+        if pids:
+            for pid in pids:
+                os.remove(pid)
+            print("exiting the docker thread nw")
+            exit(0)

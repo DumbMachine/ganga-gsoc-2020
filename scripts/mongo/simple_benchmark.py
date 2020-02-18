@@ -4,10 +4,9 @@ import sys
 import json
 import utils
 import pickle
-from docker_stats import *
-from threading import Thread
 from db import *
 from glob import glob
+from joblib import Parallel, delayed
 """
 Benching MOngoDB
 """
@@ -64,7 +63,7 @@ def bench(size, batch_size, filename):
     open("../benchmarks/pid", "w+").write(str(os.getpid()))
 
 
-funcs = [docker_stats, bench]
+funcs = [utils.docker_stats, bench]
 
 
 try:

@@ -74,7 +74,7 @@ def docker_stats(dummy1, dummy2,filename):
             for pid in pids:
                 os.remove(pid)
             print("exiting the docker thread nw")
-            exit(0)
+            raise SystemError
 
 
 # MAX: Mark the max and min usage
@@ -169,15 +169,14 @@ def plt_docker_db(filename):
 
 
 
-def plot_mem_usage_percent(size=10000, batch_size=1, iteration=1):
-    filename = f"../benchmarks/*-performance-size-{size}-batch_size-{batch_size}-*{iteration}.json"
+def plot_mem_usage_percent(size=10000, batch_size=1):
+    filename = f"../benchmarks/*-performance-size-{size}-batch_size-{batch_size}.json"
     files = glob(filename)
     plot_points = {}
     for file in files:
         data = json.load(open(file, 'r'))['stats']
         mem_usage_percent = [float(i['MEM %'][:-1]) for i in data]
         plot_points[file.split("/")[-1].split("-")[0]] = mem_usage_percent
-
 
     for key in plot_points.keys():
         plt.plot(plot_points[key], label=key)

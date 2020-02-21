@@ -1,0 +1,1 @@
+{"load_pickle_data": 0.07716703414916992, "connect_cassandra": 0.25165748596191406, "create_tables_cassandra": 0.3068270683288574, "add_jobs_cassandra": 1.398796558380127, "add_blobs_cassandra": 7.584045171737671}

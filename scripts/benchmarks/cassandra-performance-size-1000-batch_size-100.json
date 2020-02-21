@@ -1,0 +1,1 @@
+{"stats": [{"CONTAINER ID": "2b449d317881", "NAME": "cassandra", "CPU %": "0.04%", "MEM USAGE/LIMIT": "2.133GiB / 7.66GiB", "MEM %": "27.85%", "NET I/O": "55.6kB / 63kB", "BLOCK I/O": "4.1kB /", "PIDS": "98"}]}

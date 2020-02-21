@@ -51,11 +51,6 @@ def load_pickle_data(size=100000):
     return jobs, blobs
 
 
-def docker_stats(func):
-    """
-    This function will have a background process that takes care of checking the thing
-    """
-    raise NotImplemented
 
 
 @bench_func
@@ -81,10 +76,9 @@ def load_pickle_data_batch(size=100000):
     for i, blo in enumerate(_blobs):
         # FIXME: Dirty patch, for some reason any change to a single element fof blobs array, goes to all the elements. I decided to create copies after failing to debug this at that time.
         blob = copy.deepcopy(blo)
-        blob["id"] = i
+        blob["jid"] = i
         blobs.append(blob)
     return jobs, blobs
-
 
 # def docker_stats(name, interval, filename):
 #     client = docker.from_env()
@@ -129,7 +123,7 @@ def docker_stats(dummy1, dummy2,filename):
 
     proc = subprocess.Popen(["sudo", "docker",  "stats"],stdout=subprocess.PIPE)
     while True:
-        time.sleep(interval)
+        # time.sleep(interval)
         line = proc.stdout.readline()
         if not line:
             break
@@ -154,4 +148,4 @@ def docker_stats(dummy1, dummy2,filename):
             for pid in pids:
                 os.remove(pid)
             print("exiting the docker thread nw")
-            exit(0)
+            os._exit()

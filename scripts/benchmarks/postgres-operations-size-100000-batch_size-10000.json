@@ -1,0 +1,1 @@
+{"connect_postgres": 0.2300121784210205, "create_tables_postgres": 0.030486583709716797, "load_pickle_data_batch": 3.3901784420013428, "add_jobs_postgres": 11.831634759902954, "add_blobs_postgres": 174.97054982185364}

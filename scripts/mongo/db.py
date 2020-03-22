@@ -11,6 +11,7 @@ from cassandra.query import BatchStatement, SimpleStatement
 from joblib import Parallel, delayed
 from pymongo import MongoClient
 from sqlalchemy import Binary, Column, ForeignKey, Integer, String, Table
+from sqlalchemy import BINARY
 from tqdm import tqdm
 
 from utils import bench_func
@@ -24,15 +25,16 @@ def connect_mongo():
     docker run --name mongo -p 27017:27017 mongo -d
 
     """
-
+    start_time = time.time()
     client = MongoClient('localhost', 27017)
     db = client.ganga_test
-    return db
+    return db, time.time() - start_time
 
 
 @bench_func
 # @profile
 def add_jobs_mongo(db, jobs=None, blobs=None, batch_size=False):
+    status = []
     """inserts the jobs in mongo instance"""
     # jobs = [{"data":row} for i, row in enumerate(jobs)]
     if jobs:
@@ -46,8 +48,11 @@ def add_jobs_mongo(db, jobs=None, blobs=None, batch_size=False):
             return
 
         with tqdm(total=len(jobs)/batch_size) as progress:
+            start_time = time.time()
+            status.append(start_time)
             start = 0
             for batch in range(batch_size, len(jobs)+1, batch_size):
+                status.append(time.time() - status[-1])
                 try:
                     db.jobs.insert_many(jobs[start:batch])
                 except pymongo.errors.BulkWriteError as bwe:
@@ -56,11 +61,13 @@ def add_jobs_mongo(db, jobs=None, blobs=None, batch_size=False):
 
                 start = batch
                 progress.update(1)
+    return status
 
 
 @bench_func
 # @profile
 def add_blobs_mongo(db, jobs=None, blobs=None, batch_size=False):
+    status = []
     # blobs = [{"data":row} for i, row in enumerate(blobs)]
     if blobs:
         if not batch_size or batch_size > len(blobs):
@@ -73,8 +80,11 @@ def add_blobs_mongo(db, jobs=None, blobs=None, batch_size=False):
             return
 
         with tqdm(total=len(blobs)/batch_size) as progress:
+            start_time = time.time()
+            status.append(start_time)
             start = 0
             for batch in range(batch_size, len(blobs)+1, batch_size):
+                status.append(time.time() - status[-1])
                 try:
                     db.blobs.insert_many(blobs[start:batch])
                 except pymongo.errors.BulkWriteError as bwe:
@@ -84,16 +94,17 @@ def add_blobs_mongo(db, jobs=None, blobs=None, batch_size=False):
                 start = batch
                 progress.update(1)
 
-
+    return status
 
 @bench_func
 def query_jobs_all_mongo(db, table="jobs"):
     rows = [*db.jobs.find({})]
+    print(len(rows))
 
 @bench_func
 def query_blobs_all_mongo(db, table="blobs"):
     rows = [*db.blobs.find({})]
-
+    print(len(rows))
 
 
 
@@ -325,3 +336,5 @@ def query_blobs_all_cassandra(session, table="BLOB"):
     rows = [*session.execute(f"""
         SELECT * from {table}
     """)]
+
+ 

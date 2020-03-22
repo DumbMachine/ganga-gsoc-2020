@@ -58,3 +58,4 @@ try:
     Parallel(n_jobs=2, backend="threading")(delayed(func)(size, batch_size, filename) for func in funcs)
 except TypeError:
     print("Killed both threads, successfully exiting now")
+

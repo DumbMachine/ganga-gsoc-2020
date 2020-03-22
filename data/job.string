@@ -1,0 +1,58 @@
+Job (
+   outputsandbox = []  ,
+   comment = ,
+   id = 8,
+   status = new,
+   name = ,
+   inputdir = /home/needshelp/gangadir/workspace/needshelp/LocalXML/8/input/,
+   outputdir = /home/needshelp/gangadir/workspace/needshelp/LocalXML/8/output/,
+   do_auto_resubmit = False,
+   parallel_submit = True,
+   inputsandbox = []  ,
+   info =    JobInfo (
+     submit_counter = 0,
+     uuid = ,
+     monitoring_links = []  ,
+     monitor =None
+   ) ,
+   time =    JobTime (
+     timestamps =
+         Time (UTC)   Status
+- - - - - - - - - - - - - - - - - - - - -
+2020/03/10 05:51:36 - new
+
+   ) ,
+   application =    Executable (
+     exe = File(name='count-word.sh',subdir='.'),
+     args = [12 Entries of type 'str'] ,
+     env = {},
+     platform = ANY,
+     is_prepared = ShareDir(name='conf-e5d9209c-0775-453c-a73d-fabc213b1885',subdir='.'),
+     hash = 3ee875b5e35c98a78ffdc9b49f0bfd05
+   ) ,
+   backend =    Local (
+     id = -1,
+     exitcode = None,
+     workdir = ,
+     actualCE = ,
+     nice = 0,
+     force_parallel = False
+   ) ,
+   inputfiles = [12 Entries of type 'LocalFile'] ,
+   outputfiles = [ LocalFile (
+   namePattern = 'result.txt',
+   localDir = '',
+   compressed = False
+ )]  ,
+   inputdata =None,
+   outputdata =None,
+   splitter =    ArgSplitter (
+     args = [12 Entries of type 'GangaList']
+   ) ,
+   subjobs = Registry Slice: jobs(8).subjobs (0 objects)
+ ,
+   postprocessors = [<GangaCore.GPIDev.Adapters.IPostProcessor.MultiPostProcessor object at 0x7feeaca14ad0>, ] ,
+   virtualization =None,
+   metadata = {}
+ )
+

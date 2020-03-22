@@ -48,7 +48,7 @@ def net_io_usage():
         for key in plot_points.keys():
             plt.plot(plot_points[key], label=key)
 
-        plt.title("mem_usage_percent")
+        plt.title("net_io_usage")
         plt.legend(loc="upper left")
         plt.savefig(f"../images/NETIO.png", dpi=100)
         plt.clf()
@@ -82,7 +82,7 @@ def mem_cpu_usage():
         for key in plot_points.keys():
             plt.plot(plot_points[key], label=key)
 
-        plt.title("mem_usage_percent")
+        plt.title("mem_cpu_usage")
         plt.legend(loc="upper left")
         plt.savefig(f"../images/MEM_USAGE.png", dpi=100)
         plt.clf()
@@ -101,7 +101,7 @@ def plot_cpu_usage_percent():
         for key in plot_points.keys():
             plt.plot(plot_points[key], label=key)
 
-        plt.title("mem_usage_percent")
+        plt.title("cpu_usage_percent")
         plt.legend(loc="upper left")
         plt.savefig(f"../images/cpu_usage_percent.png", dpi=100)
         plt.clf()
@@ -162,7 +162,7 @@ def block_io_usage():
         for key in plot_points.keys():
             plt.plot(plot_points[key], label=key)
 
-        plt.title("mem_usage_percent")
+        plt.title("block_io_usage")
         plt.legend(loc="upper left")
         plt.savefig(f"../images/BLOCK.png", dpi=100)
         plt.clf()

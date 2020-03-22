@@ -137,6 +137,7 @@ def docker_stats(filename):
             things['NET I/O'] = " ".join(items[7:10])
             things['BLOCK I/O'] = " ".join(items[10:-2])
             things['PIDS'] = items[-1]
+            things['TIME'] = time.time()
 
             data = json.load(open(filename, "r"))
             data["stats"].append(things)

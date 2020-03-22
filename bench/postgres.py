@@ -18,7 +18,10 @@ filename = f"benchmarks/postgres.json"
 # loading the json data
 def do_work(filename):
     ITERS = 100
-    INFORMATION = []
+    INFORMATION = {
+        "push": [],
+        "pull": []
+    }
     JOB = json.load(open("job.json", "r"))
 
     # starting the database instance
@@ -80,9 +83,11 @@ def do_work(filename):
         statement = JOBS.insert().values(job)
         con.execute(statement)
         dt = time.time() - st
-        INFORMATION.append(dt)
+        INFORMATION['push'].append(dt)
     # Check if the insertions were sucecessful
+    st = time.time()
     rows = [*con.execute("SELECT * FROM jsontable")]
+    INFORMATION['push'].append(time.time() - st)
     assert len(rows) == ITERS
 
     json.dump(

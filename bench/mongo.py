@@ -16,7 +16,10 @@ filename = f"benchmarks/mongo.json"
 # loading the json data
 def do_work(filename):
     ITERS = 100
-    INFORMATION = []
+    INFORMATION = {
+        "push": [],
+        "pull": []
+    }
     JOB = json.load(open("job.json", "r"))
 
     # starting the database instance
@@ -29,9 +32,12 @@ def do_work(filename):
         st = time.time()
         db.ganga_jobs.insert_one(job)
         dt = time.time() - st
-        INFORMATION.append(dt)
+        INFORMATION['push'].append(dt)
+
     # Check if the insertions were sucecessful
+    st = time.time()
     rows = [*db.ganga_jobs.find()]
+    INFORMATION['push'].append(time.time() - st)
     assert len(rows) == ITERS
 
     json.dump(

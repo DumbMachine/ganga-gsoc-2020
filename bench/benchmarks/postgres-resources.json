@@ -1,1 +1,244 @@
-{"stats": [{"CONTAINER ID": "a4f20c071f55", "NAME": "postgres", "CPU %": "2.77%", "MEM USAGE/LIMIT": "14.87MiB / 7.66GiB", "MEM %": "0.19%", "NET I/O": "82kB / 11.8kB", "BLOCK I/O": "2.93MB /", "PIDS": "8"}, {"CONTAINER ID": "237f2e369339", "NAME": "mongo", "CPU %": "0.10%", "MEM USAGE/LIMIT": "69.55MiB / 7.66GiB", "MEM %": "0.89%", "NET I/O": "438kB / 389kB", "BLOCK I/O": "90.1kB /", "PIDS": "32"}, {"CONTAINER ID": "a4f20c071f55", "NAME": "postgres", "CPU %": "2.77%", "MEM USAGE/LIMIT": "14.87MiB / 7.66GiB", "MEM %": "0.19%", "NET I/O": "82kB / 11.8kB", "BLOCK I/O": "2.93MB /", "PIDS": "8"}, {"CONTAINER ID": "237f2e369339", "NAME": "mongo", "CPU %": "0.10%", "MEM USAGE/LIMIT": "69.55MiB / 7.66GiB", "MEM %": "0.89%", "NET I/O": "438kB / 389kB", "BLOCK I/O": "90.1kB /", "PIDS": "32"}, {"CONTAINER ID": "a4f20c071f55", "NAME": "postgres", "CPU %": "2.74%", "MEM USAGE/LIMIT": "14.98MiB / 7.66GiB", "MEM %": "0.19%", "NET I/O": "168kB / 21.3kB", "BLOCK I/O": "2.93MB /", "PIDS": "8"}, {"CONTAINER ID": "237f2e369339", "NAME": "mongo", "CPU %": "0.34%", "MEM USAGE/LIMIT": "69.55MiB / 7.66GiB", "MEM %": "0.89%", "NET I/O": "438kB / 389kB", "BLOCK I/O": "90.1kB /", "PIDS": "32"}, {"CONTAINER ID": "a4f20c071f55", "NAME": "postgres", "CPU %": "2.74%", "MEM USAGE/LIMIT": "14.98MiB / 7.66GiB", "MEM %": "0.19%", "NET I/O": "168kB / 21.3kB", "BLOCK I/O": "2.93MB /", "PIDS": "8"}, {"CONTAINER ID": "237f2e369339", "NAME": "mongo", "CPU %": "0.34%", "MEM USAGE/LIMIT": "69.55MiB / 7.66GiB", "MEM %": "0.89%", "NET I/O": "438kB / 389kB", "BLOCK I/O": "90.1kB /", "PIDS": "32"}, {"CONTAINER ID": "a4f20c071f55", "NAME": "postgres", "CPU %": "2.16%", "MEM USAGE/LIMIT": "15.06MiB / 7.66GiB", "MEM %": "0.19%", "NET I/O": "237kB / 28.7kB", "BLOCK I/O": "2.93MB /", "PIDS": "8"}, {"CONTAINER ID": "237f2e369339", "NAME": "mongo", "CPU %": "0.41%", "MEM USAGE/LIMIT": "69.55MiB / 7.66GiB", "MEM %": "0.89%", "NET I/O": "438kB / 389kB", "BLOCK I/O": "90.1kB /", "PIDS": "32"}, {"CONTAINER ID": "a4f20c071f55", "NAME": "postgres", "CPU %": "2.16%", "MEM USAGE/LIMIT": "15.06MiB / 7.66GiB", "MEM %": "0.19%", "NET I/O": "237kB / 28.7kB", "BLOCK I/O": "2.93MB /", "PIDS": "8"}, {"CONTAINER ID": "237f2e369339", "NAME": "mongo", "CPU %": "0.41%", "MEM USAGE/LIMIT": "69.55MiB / 7.66GiB", "MEM %": "0.89%", "NET I/O": "438kB / 389kB", "BLOCK I/O": "90.1kB /", "PIDS": "32"}]}
+{
+    "stats": [
+        {
+            "CONTAINER ID": "a4f20c071f55",
+            "NAME": "postgres",
+            "CPU %": "2.77%",
+            "MEM USAGE/LIMIT": "14.87MiB / 7.66GiB",
+            "MEM %": "0.19%",
+            "NET I/O": "82kB / 11.8kB",
+            "BLOCK I/O": "2.93MB /",
+            "PIDS": "8"
+        },
+        {
+            "CONTAINER ID": "237f2e369339",
+            "NAME": "mongo",
+            "CPU %": "0.10%",
+            "MEM USAGE/LIMIT": "69.55MiB / 7.66GiB",
+            "MEM %": "0.89%",
+            "NET I/O": "438kB / 389kB",
+            "BLOCK I/O": "90.1kB /",
+            "PIDS": "32"
+        },
+        {
+            "CONTAINER ID": "a4f20c071f55",
+            "NAME": "postgres",
+            "CPU %": "2.77%",
+            "MEM USAGE/LIMIT": "14.87MiB / 7.66GiB",
+            "MEM %": "0.19%",
+            "NET I/O": "82kB / 11.8kB",
+            "BLOCK I/O": "2.93MB /",
+            "PIDS": "8"
+        },
+        {
+            "CONTAINER ID": "237f2e369339",
+            "NAME": "mongo",
+            "CPU %": "0.10%",
+            "MEM USAGE/LIMIT": "69.55MiB / 7.66GiB",
+            "MEM %": "0.89%",
+            "NET I/O": "438kB / 389kB",
+            "BLOCK I/O": "90.1kB /",
+            "PIDS": "32"
+        },
+        {
+            "CONTAINER ID": "a4f20c071f55",
+            "NAME": "postgres",
+            "CPU %": "2.74%",
+            "MEM USAGE/LIMIT": "14.98MiB / 7.66GiB",
+            "MEM %": "0.19%",
+            "NET I/O": "168kB / 21.3kB",
+            "BLOCK I/O": "2.93MB /",
+            "PIDS": "8"
+        },
+        {
+            "CONTAINER ID": "237f2e369339",
+            "NAME": "mongo",
+            "CPU %": "0.34%",
+            "MEM USAGE/LIMIT": "69.55MiB / 7.66GiB",
+            "MEM %": "0.89%",
+            "NET I/O": "438kB / 389kB",
+            "BLOCK I/O": "90.1kB /",
+            "PIDS": "32"
+        },
+        {
+            "CONTAINER ID": "a4f20c071f55",
+            "NAME": "postgres",
+            "CPU %": "2.74%",
+            "MEM USAGE/LIMIT": "14.98MiB / 7.66GiB",
+            "MEM %": "0.19%",
+            "NET I/O": "168kB / 21.3kB",
+            "BLOCK I/O": "2.93MB /",
+            "PIDS": "8"
+        },
+        {
+            "CONTAINER ID": "237f2e369339",
+            "NAME": "mongo",
+            "CPU %": "0.34%",
+            "MEM USAGE/LIMIT": "69.55MiB / 7.66GiB",
+            "MEM %": "0.89%",
+            "NET I/O": "438kB / 389kB",
+            "BLOCK I/O": "90.1kB /",
+            "PIDS": "32"
+        },
+        {
+            "CONTAINER ID": "a4f20c071f55",
+            "NAME": "postgres",
+            "CPU %": "2.16%",
+            "MEM USAGE/LIMIT": "15.06MiB / 7.66GiB",
+            "MEM %": "0.19%",
+            "NET I/O": "237kB / 28.7kB",
+            "BLOCK I/O": "2.93MB /",
+            "PIDS": "8"
+        },
+        {
+            "CONTAINER ID": "237f2e369339",
+            "NAME": "mongo",
+            "CPU %": "0.41%",
+            "MEM USAGE/LIMIT": "69.55MiB / 7.66GiB",
+            "MEM %": "0.89%",
+            "NET I/O": "438kB / 389kB",
+            "BLOCK I/O": "90.1kB /",
+            "PIDS": "32"
+        },
+        {
+            "CONTAINER ID": "a4f20c071f55",
+            "NAME": "postgres",
+            "CPU %": "2.16%",
+            "MEM USAGE/LIMIT": "15.06MiB / 7.66GiB",
+            "MEM %": "0.19%",
+            "NET I/O": "237kB / 28.7kB",
+            "BLOCK I/O": "2.93MB /",
+            "PIDS": "8"
+        },
+        {
+            "CONTAINER ID": "237f2e369339",
+            "NAME": "mongo",
+            "CPU %": "0.41%",
+            "MEM USAGE/LIMIT": "69.55MiB / 7.66GiB",
+            "MEM %": "0.89%",
+            "NET I/O": "438kB / 389kB",
+            "BLOCK I/O": "90.1kB /",
+            "PIDS": "32"
+        },
+        {
+            "CONTAINER ID": "7fc3341d444d",
+            "NAME": "postgres",
+            "CPU %": "3.17%",
+            "MEM USAGE/LIMIT": "15MiB / 7.66GiB",
+            "MEM %": "0.19%",
+            "NET I/O": "103kB / 14.2kB",
+            "BLOCK I/O": "2.93MB /",
+            "PIDS": "8"
+        },
+        {
+            "CONTAINER ID": "39e224bacc35",
+            "NAME": "mongo",
+            "CPU %": "0.01%",
+            "MEM USAGE/LIMIT": "71.8MiB / 7.66GiB",
+            "MEM %": "0.92%",
+            "NET I/O": "363kB / 349kB",
+            "BLOCK I/O": "3.06MB /",
+            "PIDS": "32"
+        },
+        {
+            "CONTAINER ID": "7fc3341d444d",
+            "NAME": "postgres",
+            "CPU %": "3.17%",
+            "MEM USAGE/LIMIT": "15MiB / 7.66GiB",
+            "MEM %": "0.19%",
+            "NET I/O": "103kB / 14.2kB",
+            "BLOCK I/O": "2.93MB /",
+            "PIDS": "8"
+        },
+        {
+            "CONTAINER ID": "39e224bacc35",
+            "NAME": "mongo",
+            "CPU %": "0.01%",
+            "MEM USAGE/LIMIT": "71.8MiB / 7.66GiB",
+            "MEM %": "0.92%",
+            "NET I/O": "363kB / 349kB",
+            "BLOCK I/O": "3.06MB /",
+            "PIDS": "32"
+        },
+        {
+            "CONTAINER ID": "7fc3341d444d",
+            "NAME": "postgres",
+            "CPU %": "2.95%",
+            "MEM USAGE/LIMIT": "15.06MiB / 7.66GiB",
+            "MEM %": "0.19%",
+            "NET I/O": "205kB / 25.2kB",
+            "BLOCK I/O": "2.93MB /",
+            "PIDS": "8"
+        },
+        {
+            "CONTAINER ID": "39e224bacc35",
+            "NAME": "mongo",
+            "CPU %": "0.34%",
+            "MEM USAGE/LIMIT": "71.8MiB / 7.66GiB",
+            "MEM %": "0.92%",
+            "NET I/O": "363kB / 349kB",
+            "BLOCK I/O": "3.06MB /",
+            "PIDS": "32"
+        },
+        {
+            "CONTAINER ID": "7fc3341d444d",
+            "NAME": "postgres",
+            "CPU %": "2.95%",
+            "MEM USAGE/LIMIT": "15.06MiB / 7.66GiB",
+            "MEM %": "0.19%",
+            "NET I/O": "205kB / 25.2kB",
+            "BLOCK I/O": "2.93MB /",
+            "PIDS": "8"
+        },
+        {
+            "CONTAINER ID": "39e224bacc35",
+            "NAME": "mongo",
+            "CPU %": "0.34%",
+            "MEM USAGE/LIMIT": "71.8MiB / 7.66GiB",
+            "MEM %": "0.92%",
+            "NET I/O": "363kB / 349kB",
+            "BLOCK I/O": "3.06MB /",
+            "PIDS": "32"
+        },
+        {
+            "CONTAINER ID": "7fc3341d444d",
+            "NAME": "postgres",
+            "CPU %": "2.38%",
+            "MEM USAGE/LIMIT": "14.9MiB / 7.66GiB",
+            "MEM %": "0.19%",
+            "NET I/O": "274kB / 32.9kB",
+            "BLOCK I/O": "2.93MB /",
+            "PIDS": "8"
+        },
+        {
+            "CONTAINER ID": "39e224bacc35",
+            "NAME": "mongo",
+            "CPU %": "0.41%",
+            "MEM USAGE/LIMIT": "71.8MiB / 7.66GiB",
+            "MEM %": "0.92%",
+            "NET I/O": "363kB / 349kB",
+            "BLOCK I/O": "3.06MB /",
+            "PIDS": "32"
+        },
+        {
+            "CONTAINER ID": "7fc3341d444d",
+            "NAME": "postgres",
+            "CPU %": "2.38%",
+            "MEM USAGE/LIMIT": "14.9MiB / 7.66GiB",
+            "MEM %": "0.19%",
+            "NET I/O": "274kB / 32.9kB",
+            "BLOCK I/O": "2.93MB /",
+            "PIDS": "8"
+        },
+        {
+            "CONTAINER ID": "39e224bacc35",
+            "NAME": "mongo",
+            "CPU %": "0.41%",
+            "MEM USAGE/LIMIT": "71.8MiB / 7.66GiB",
+            "MEM %": "0.92%",
+            "NET I/O": "363kB / 349kB",
+            "BLOCK I/O": "3.06MB /",
+            "PIDS": "32"
+        }
+    ]
+}
